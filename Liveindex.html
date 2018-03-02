@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sherwin Elcock</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  
+
+</head>
+
+<style type="text/css">
+.panel {
+    height: 100%;
+    width: 100%;
+  }
+/* Custom Scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-button{
+  width:10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: blue; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white; 
+}
+/* End scrollbar */
+
+
+@font-face{
+  font-family:brushfont;
+  src: url("caveatbrush.ttf");
+}
+
+@font-face{
+  font-family:Aileron;
+  src: "Aileron-Regular.otf";
+}
+
+/* To make the elements slide in */
+.slideanim {visibility:hidden;}
+.slide {
+/* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide; 
+/* The duration of the animation */
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+/* Make the element visible */
+  visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+  opacity: 0;
+  transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.container {
+    padding: 60px 50px;
+    padding-top: 50px;
+  }
+
+/* Typewriter text */
+#AboutMe2{
+  color:blue;
+  white-space: pre-wrap;
+
+}
+
+/* Resume Section Heading */
+#ResHead{
+	font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  color: blue;
+}
+
+/* 8 Column Duties Section in Resume */
+#Duties{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-top: 1em;
+  text-decoration: underline;
+}
+
+/* For Vitalyst and Riddle info*/
+#jobTitle{
+  font-size: 1.5em;
+}
+
+/* First Section Heading */
+#projectHeading{
+  font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  animation-name: fun;
+  animation-duration: 10s;
+}
+
+@keyframes fun{
+	0%{transform: rotateX(360deg)};
+	25%{transform: rotateX(-270deg)};
+	50%{transform: rotateX(-180deg)};
+	75%{transform: rotateX(270deg)};
+	100%{transform: rotateX(360deg)};
+}
+/*To make it flip around on the Y axis*/
+/*Safari*/
+@-webkit-keyframes fun{
+	0%{transform: rotateY(360deg)};
+	25%{transform: rotateY(-270deg)};
+	50%{transform: rotateY(180deg)};
+	75%{transform: rotateY(270deg)};
+	100%{transform: rotateY(360deg)};
+}
+
+
+.jectContents{
+	font-family: "Open Sans";
+  color: #FF6600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* "At Night" */
+#nightHeading{
+  font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+ -webkit-animation-name: wiggle;
+	animation-iteration-count: infinite;
+	-webkit-animation-duration: 5s;
+	animation-name: wiggle;
+	animation-duration: 5s;
+}
+
+/*Portfolio Section*/
+
+#portfolioHead{
+	font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  text-transform: uppercase;
+	/*color: white;*/
+	-webkit-animation-name: rotate;
+	animation-iteration-count: infinite;
+	-webkit-animation-duration: 5s;
+	animation-name: rotate;
+	animation-duration: 5s;
+}
+@-webkit-keyframes wiggle{
+	0%{transform: rotateX(360deg)};
+	25%{transform: rotateX(-270deg)};
+	50%{transform: rotateX(-180deg)};
+	75%{transform: rotateX(270deg)};
+	100%{transform: rotateX(360deg)};
+}
+
+/*Standard*/
+@keyframes wiggle{
+	0%{transform: rotateX(360deg)};
+	25%{transform: rotateX(-270deg)};
+	50%{transform: rotateX(-180deg)};
+	75%{transform: rotateX(270deg)};
+	100%{transform: rotateX(360deg)};
+}
+/*To make it flip around on the Y axis*/
+/*Safari*/
+@-webkit-keyframes rotate{
+	0%{transform: rotateY(360deg)};
+	25%{transform: rotateY(-270deg)};
+	50%{transform: rotateY(180deg)};
+	75%{transform: rotateY(270deg)};
+	100%{transform: rotateY(360deg)};
+}
+
+/*Standard*/
+@keyframes rotate{
+	0%{transform: rotateY(360deg)};
+	25%{transform: rotateY(-270deg)};
+	50%{transform: rotateY(-180deg)};
+	75%{transform: rotateY(270deg)};
+	100%{transform: rotateY(360deg)};
+}
+
+
+#portfolio{text-align: center;
+background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, #800000, #ff6666); /* Standard syntax (must be last) */}
+
+
+#foliotext{color:white;}
+
+#foliotextdark{color:#04045e;
+text-align: left;}
+
+#parafoliotext{text-align: left;
+color:white;}
+
+
+/* Contact Section */
+#contact{
+  text-transform: uppercase;
+  text-align: center;
+  color: blue;
+}
+#emailText{
+  font-size: 1.5em;
+  color: blue;
+}
+
+/*Closing remarks style*/
+.exit{color: red;}
+
+a{color: black;}
+
+/* What i've picked up */
+h4{color: #FF6600;}
+
+#night2{
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;text-align: center;
+color:red;}
+
+/*At Night Section*/
+#tester{
+  opacity:0.2;}
+
+
+/*Text inside at Night Section*/
+.nighttime{
+	font-size: 5em;
+	color: blue;
+	transform: rotateX(20deg);
+	-webkit-transform: rotateX(20deg);
+/*animation-name: wiggle;*/
+/*-webkit-animation-name:wiggle;
+-webkit-animation-duration: 5s;
+animation-duration: 5s;
+animation-iteration-count: infinite;*/
+}
+
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes wiggle{
+	0%{transform: rotateX(0deg)};
+	25%{transform: rotateX(20deg)};
+	50%{transform: rotateX(0deg)};
+	75%{transform: rotateX(-20deg)};
+	100%{transform: rotateX(0deg)};
+}*/
+/* Standard syntax */
+/*@keyframes wiggle {
+    0%{transform: rotateX(0deg)};
+	25%{transform: rotateX(20deg)};
+	50%{transform: rotateX(0deg)};
+	75%{transform: rotateX(-20deg)};
+	100%{transform: rotateX(0deg)};
+}*/
+
+/*This Site  CSS*/
+#folioHeading{
+  font-size: 3em;
+	text-transform: uppercase;
+	-webkit-animation-name:swapcolor;
+	-webkit-animation-duration: 6s;
+	animation-name: swapcolor;
+	animation-duration: 6s;
+	animation-delay:2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes swapcolor {
+    0%{color: blue;}
+    25% {color: yellow;}
+    50% {color: gray;}
+    75% {color: purple;}
+    100% {color: white;}
+}
+
+/* Standard syntax */
+@keyframes swapcolor {
+    0%{color: blue;}
+    25% {color: yellow;}
+    50% {color: gray;}
+    75% {color: purple;}
+    100% {color: white;}
+}
+/*End this site heading CSS*/
+
+#folioHeading2{
+	text-transform: uppercase;
+	-webkit-transform: rotateX(20deg);
+	transform: rotateX(20deg);
+	-webkit-animation-name:swapcolor2;
+	-webkit-animation-duration: 6s;
+	animation-name: swapcolor2;
+	animation-duration: 6s;
+	animation-delay:2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+}
+@-webkit-keyframes swapcolor2{
+    0%{color: green;}
+    25% {color: black;}
+    50% {color: white;}
+    75% {color: brown;}
+    100% {color: orange;}
+}
+
+/* Standard syntax */
+@keyframes swapcolor2 {
+    0%{color: green;}
+    25% {color: black;}
+    50% {color: white;}
+    75% {color: brown;}
+    100% {color: orange;}
+}
+
+#boot1{/*background-color: green;*/
+	-webkit-animation-name:rotatecolors 10s infinite;
+    animation: rotatecolors 10s infinite;
+}
+
+@-webkit-keyframes rotatecolors{
+    0%{background-color: green;}
+    25% {background-color: black;}
+    50% {background-color: white;}
+    75% {background-color: brown;}
+    100% {background-color: orange;}
+   }
+
+ @keyframes rotatecolors{
+    0%{background-color: green;}
+    25% {background-color: black;}
+    50% {background-color: white;}
+    75% {background-color: brown;}
+    100% {background-color: orange;}
+}
+
+#boot2{-webkit-animation-name:rotatecolors2 10s infinite;
+    animation: rotatecolors2 10s infinite;}
+
+    @-webkit-keyframes rotatecolors2{
+    0%{background-color: black;}
+    25% {background-color: white;}
+    50% {background-color: brown;}
+    75% {background-color: orange;}
+    100% {background-color: green;}
+   }
+
+ @keyframes rotatecolors2{
+    0%{background-color: black;}
+    25% {background-color: white;}
+    50% {background-color: brown;}
+    75% {background-color: orange;}
+    100% {background-color: green;}
+   }
+
+#boot3{-webkit-animation-name:rotatecolors3 10s infinite;
+    animation: rotatecolors3 10s infinite;}
+    
+    @-webkit-keyframes rotatecolors3{
+    0%{background-color: brown;}
+    25% {background-color: orange;}
+    50% {background-color: green;}
+    75% {background-color: black;}
+    100% {background-color: white;}
+   }
+
+@-webkit-keyframes rotatecolors3{
+    0%{background-color: brown;}
+    25% {background-color: orange;}
+    50% {background-color: green;}
+    75% {background-color: black;}
+    100% {background-color: white;}
+   }
+
+/*Flip iphone image on hover*/
+#iphone:hover{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.carousel{
+  .img{height: 100%;}
+ /*#NightTimeOpac{background-image:url("code.png");}*/
+}
+
+.tricks{color: purple;
+text-transform: uppercase;
+text-align: center;
+font-size: 2em;}
+
+
+.button {
+    /*Change buttons to block elements */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  padding: 15px 25px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #000066;
+}
+
+.button:hover {background-color: #7F7FB2}
+
+.button:active {
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+  background-color: #3e8e41;
+}
+</style>
+
+<body onload="typeWriter();" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" id="hi" ref="#AboutMe">Sherwin Elcock</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#AboutMe">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#Resume">Resume</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>     
+    </div>
+  </div>
+</nav>
+
+<div id ="intro" class="container-fluid" id="AboutMe" style="margin-top:15px;">
+
+    <div class="col-sm-12 jumbotron Pitch" style="background-color: white;"><h1> Hey, I'm Sherwin</h1>
+    <div class="col-sm-7"><p id="AboutMe2"></p></body></div>
+    <div class="col-sm-5">
+
+      <img class="img-responsive myPic" src="me2.png" alt="Sherwin Elcock" width="360" height="245"> 
+    </div>
+</div>
+</div>
+
+
+<div id="AboutMe" class="container-fluid projContents" style= "background:radial-gradient(circle, #74A6EE 0%, #485CB2 100%); padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh;">
+
+
+  <div class="row slideanim">
+     <h1 id="projectHeading">Help Desk</h1>
+     <p style="text-align: center; padding-bottom: 2em;">Besides the <i class="fa fa-volume-control-phone" style="font-size:36px"></i> I've picked up.</p>
+   </div>
+
+  <div class="row slideanim">
+
+  <div class="col-sm-4">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#OS" style="color: #FF6600;">Troubleshooting</a>
+        </h4>
+      </div>
+      <div id="OS" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p class="lead">- Mac OS</p>
+          <p class="lead">- Windows</p>
+          <ul>
+            <li  class="lead">7 , 8, 10</li>
+          </ul>
+          <p  class="lead">Data Encryption</p> 
+          <p  class="lead">Backups and Recovery</p> 
+        </div>
+      </div>
+    </div>
+    </div>
+
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="color: #FF6600;">Applications</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul>
+            <ul class="lead">Microsoft</ul>
+            <li class="lead">Word</li>
+            <li class="lead">Excel</li>
+            <li class="lead">PowerPoint</li>
+            <li class="lead">SharePoint</li>
+            <li class="lead">Teams</li>
+          </ul>
+          <ul>
+          <ul class="lead">Others</ul>
+          <li class="lead">Mac Suite</li>
+          <li class="lead">Googles Apps</li>
+          <p class="lead">Google exists... We can figure it out.</p>
+        </ul>
+
+        </div>
+      </div>
+          </div>
+      </div>
+    </div>
+     <div class="col-sm-4">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Network" style="color: #FF6600;">Network Fundamentals</a>
+        </h4>
+      </div>
+      <div id="Network" class="panel-collapse collapse">
+        <div class="panel-body lead">Understaning of Network fundamentals</div>
+      </div>
+    </div>
+    </div>
+   <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Dtrouble" style="color: #FF6600;">Device Troubleshooting</a>
+        </h4>
+      </div>
+      <div id="Dtrouble" class="panel-collapse collapse">
+        <div class="panel-body"><p class="lead">Mobile Devices</p>
+          <ul>
+            <li class="lead">Apple and Android</li>
+          </ul>
+          <p class="lead">Printers</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+    <div class="col-sm-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="color: #FF6600;">Virtualization</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body"><p class="lead">Familiar with set up of virtual machines.</p>
+          <p class="lead">Hyper-V, VMware Fusion</p>
+        </div>
+      </div>
+    </div>
+         <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Applications" style="color: #FF6600;">User Training</a>
+        </h4>
+      </div>
+      <div id="Applications" class="panel-collapse collapse">
+        <div class="panel-body"><p class="lead">Helping users understand new software.</p>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+<div class="row slideanim">
+            <div class="col-sm-12">
+             <h1 id="projectHeading">Soft Skills</h1>
+            </div>
+            
+            <div class="col-sm-6">
+              <p class="lead">- Excellent problem solving and critical thinking skills.</p>
+              <!-- <p class="lead"> </p> -->
+              <p class="lead">- I know that it is important to explain what I am ABOUT to do and why.</p>
+              <p class="lead">- Ability to work in a team.</p>
+            </div>
+              <div class="col-sm-6">
+                <p class="lead">-Properly escalate unresolved queries to the appropriate level of support.
+              <p class="lead">(That might be the service agreement, or I may be flat out stumped (Google-fu can't find it).)</p>
+          </div>
+
+     </div>
+   </div>
+  
+
+
+
+<div class="container-fluid row slideanim" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh;">
+  <div class="row">
+     <h1 id="nightHeading">At Night</h1>
+   </div>
+     <div class="row slideanim">
+
+<div class="col-sm-12 Learned">
+       <h2 id="night2" style="font-family: brushfont";>I mess with websites.</h2>
+      <p class="lead" > &#60;p class=&#34;lead&#34;&#62;I use <span class="nighttime">HTML</span> for the layout. &#60;/p&#62;</p>
+      <p class="lead" >To style and animate the layout <span class="nighttime">CSS.</span></p>
+       <p class="lead">JavaScript and JQuerry to "spruce it up" a little bit.</p>
+  </div>
+      <div class="row slideanim" style="padding-top: 3em;">
+      	<p style="text-align: center;"><span class="nighttime">Bootstrap</span></p>
+      	<div class="col-sm-4" id="boot1">
+      <p class="lead" >You know </p>
+      <p class="lead">  The col-sm-4 </p>
+  </div>
+      	<div class="col-sm-4" id="boot2">
+      <p class="lead">to make it</p>
+      <p class="lead"> Again, another col-sm-4 </p>
+  		<!-- <p class="lead">I'll fall in under</p> -->
+  </div>
+      	<div class="col-sm-4" id="boot3">
+      <p class="lead"> responsive.</p>
+      <p class="lead"> To get to 12, col-sm-4 </p>
+  </div>
+     
+      
+    </div>
+
+<div class="row slideanim">
+<!-- <div class="col-sm-2"> -->
+	<!-- Spinner -->
+  <!-- <p><i class="fa fa-spinner w3-spin" style="font-size:50px"></i></p> -->
+  <!-- </div>	 -->
+<div class="col-sm-12">
+
+	<h1 style="text-align: center; padding-top: 25px;">Some tricks I've picked up.</h1>
+	<h3 style="text-align: center;">Headings are links - check them out. </h3>
+	
+</div>
+
+<!-- <div class="col-sm-2">
+	<! Spinner -->
+  <!-- <p><i class="fa fa-spinner w3-spin" style="font-size:50px;" ></i></p> -->
+  <!-- </div> -->
+</div> 
+
+<div class="row slideanim" style="padding-top: 25px;">
+	<div class="col-sm-5">
+<a href = "parallax_scroll.html" target="_blank"><p class="lead tricks"> JavaScript Parallax Scroll</p></a>
+<p>Blue circles are the background.<p>
+<p>Then I have 5 different triangles, each on a different layer and scrolling at a different speed.<p>
+<p>
+</div>
+
+<div class="col-sm-2">
+	
+	</div>
+<div class="col-sm-5">
+	<a href = "fade_out.html" target="_blank"><p class ="lead tricks">JavaScript to Fade Out/In Elements</p></a>
+		<p>Target the opacity of the element.</p>
+		<p>In from 0 - 10.</p>
+		<p>Out from 10 - 0.</p>
+	</div>
+	
+	</div>
+
+      <div class="row slideanim" style="padding-top: 25px;">
+          <div class="col-sm-12 Learned text-center">
+            
+            <p class="lead" id="app" style="font-family: brushfont; font-size:2em;"> 
+            I also speak a few non-human languages. Feel free check out what I'm working on.</p>
+          </div>
+<div class="row">
+	<div class="col-sm-4 Learned">
+	</div>
+          <div class="col-sm-4 Learned">
+          	<a href="#" title=""><img src="GitHub_Logo.png" class="img-responsive"></a>
+            </div> 
+          <div class="col-sm-4 Learned"> 
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://github.com/SherwinElcock/Personal-Website" target="_blank"><button class="button">Personal Website</button></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://github.com/SherwinElcock/python" target="_blank"><button class="button">Python</button></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://github.com/SherwinElcock/JavaScript"><button class="button">Javascript</button></a>
+        </div>
+        </div>
+         
+</div>
+</div>
+</div>
+
+<div id="portfolio" class="container-fluid" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh;">
+  <div class="row slideanim" style="padding-top: 3em;">
+     <h1 id="portfolioHead">Portfolio</h1>
+  </div>
+  <div class="row slideanim col-sm-12">
+  <h2 style="font-size: 2.5em;"> This site </h2>
+  </div>
+  <div class="row slideanim">
+  <div class="col-sm-6">
+  	<h2 id="folioHeading"> The Basics </h2>
+    <p class="lead" id="foliotextdark">Made using HTML, CSS, JavaScript, JQuerry and BootStrap.</p>
+    <p class="lead" id="foliotextdark">It's responsive... It'll look good on any size screen/device.</p>
+    <p class="lead" id="foliotextdark">It's gone through many changes and will continue to, as I learn more.</p>
+    <p class="lead" id="foliotextdark">Gimp to edit images.</p>
+  
+  </div>
+
+
+ <div class="col-sm-6">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img class="img-responsive" src="iphone.png" alt="iPhone" style="height:500px;">
+      </div>
+
+      <div class="item">
+        <img class="img-responsive" src="ipad.png" alt="iPad" style="height:500px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+  </div>
+</div>
+
+ <div class="row slideanim" style="padding-top: 3em;">
+ 	<div class="col-sm-4">
+  	<h2 id="folioHeading"> CSS </h2>
+  </div>
+  	<div class="col-sm-8">
+  <p class="lead" id="foliotextdark">To make information slide into view.</p>    
+  <p class="lead" id="foliotextdark">To change text color on a cycle.</p>
+  <p class="lead" id="foliotextdark">To flip AT NIGHT heading on it's Y Axis</p>
+  <p class="lead" id="foliotextdark">To flip PORTFOLIO heading on it's X Axis</p>
+  <p class="lead" id="foliotextdark">I couldn't resist customizing the scroll bar.</p>
+</div>
+	</div>
+
+<div class="row slideanim" style="padding-top: 3em;">
+<div class="col-sm-6">
+  <h2 id="folioHeading">JavaScript & </h2>
+<h2 id="folioHeading">JQuerry</h2>
+</div>
+  <div class="col-sm-6">
+  <p class="lead" id="foliotextdark">Used JQuerry for the Smooth Scroll</p>
+  <p class="lead" id="foliotextdark">JavaScript for the typewriter effect in the opening.</p>
+<!--   <p class="lead" id="foliotextdark"></p>
+  <p class="lead" id="foliotextdark"></p>
+  <p class="lead" id="foliotextdark"></p>
+  <p class="lead" id="foliotextdark"></p> -->
+</div>
+ </div>
+<!--  <div class="row slideanim" style="margin-top: 25px;">
+<div class="col-sm-12">
+  <h2 id="folioHeading2"> That site </h2>
+    </div>
+    <div class="row slideanim">
+  <div class="col-sm-4">
+    <p class="lead" id="foliotextdark"> This will </p>
+  </div>
+  <div class="col-sm-4">
+    <p class="lead" id="foliotextdark""> Have some information</p>
+    <p class="lead" id="foliotextdark""> EVENTUALLY</p>
+</div>
+<div class="col-sm-4">
+  <p class="lead" id="foliotextdark"> In it</p>
+</div>
+</div>
+ </div> -->
+<div class="row slideanim" style="padding-top: 3em;">
+  <div class="col-sm-6">
+<h2 id="folioHeading"> Bootstrap</h2>
+</div>
+<div class="col-sm-6">
+<p class="lead" id="foliotextdark">Made use of the grid system to help with layout responsiveness.</p>
+<p class="lead" id="foliotextdark">The picture carousel.</p>
+<p class="lead" id="foliotextdark">Accordion effect in the Help Desk section.</p>
+</div>
+
+</div>
+</div>
+
+<!-- background:radial-gradient(circle, #74A6EE 0%, #485CB2 100%); -->
+     <div id="Resume" class="container-fluid" style="background-color: #C8ECF7; padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; background-color: #D3D3D3;       min-height: 100vh;">
+      <div class="row slideanim">
+    <h1 id="ResHead">Resume</h1>
+  </div>
+  <div class="row slideanim">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>
+            <span style="color:orangered;" class="employer">Vitalyst - 10/2016 - Present</span></h3>
+            <p id="jobTitle">Productivity Consultant</p>
+</div>
+<div class="col-sm-8">
+    <p id="Duties">Duties</p>
+    <p class="lead">Responsible for initial support for PC, Network, printing and hardware/software functionality in accordance to Service Level Agreements.</p>
+    <p class="lead">Address customer contacts (telephone or email) promptly and efficiently within a specific timeframe to provide a defined level of service and availability to the customer.</p>
+    <p class="lead">Ensure proper recording, documentation and closure of tickets.</p>
+    <p class="lead">Properly escalate unresolved queries to the appropriate level of support.</p>
+    <p class="lead">Train users who are new to software.</p>
+    
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#dutiesExpand">More</button>
+  <div id="dutiesExpand" class="collapse">
+        <ul>
+          <li>Help with Microsoft Office Product Suite</li>
+          <ul>
+        <li>Outlook, Excel, Word, OneDrive, SharePoint</li>
+      </ul>    
+</ul>
+  </div>
+</div>
+</div>
+
+<div class="row">
+        <div class="col-sm-4">
+    <h3>
+    <span style="color:#83bd42" class="employer">Riddle Hospital - 10/2004-2/2016</span></h3>
+    <p id="jobTitle">Imaging Tech</p>
+</div>
+<div class="col-sm-8">
+    <p id="Duties">Duties</p>
+    <p class="lead">Using appropriate software, Assist doctors and patients in acquiring and viewing medical images.</p>
+    <p class="lead">Maintain Radiology records according to HIPPA compliance standards.</p>
+    
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="Contact" class="container-fluid contContents" style="padding-top:50px; padding-bottom:80px; padding-left: 75px; padding-right: 75px; min-height: 100vh;">
+
+  <div class="row slideanim">
+    <div class="col-sm-12">
+<h1 id="contact" style="font-family: brushfont; font-size: 5em;">That's it...</h1>
+   </div>
+<div class="row slideanim">
+  <div class="col-sm-4 text-center">
+<h1>You can</h1>
+<p class="lead" style="font-family: brushfont";>Lurk around my</p>
+<a class="LI-simple-link" href='https://www.linkedin.com/in/sherwin-elcock-96ab8760?trk=profile-badge'><img class="img-responsive" src="linkedlogo.png" alt="Link to Public Linked in Profile"></a>
+</div>
+  <div class="col-sm-4 text-center">
+   <!-- <h1>Or</h1> !-->
+<a href="mailto:selcock5@yahoo.com?subject=I was at your site"><img class="img-responsive" src="emailme.jpg" alt="Email Me Picture" style="padding-top: 50px;"></a>
+<p id=emailText style="font-family: brushfont";>(Click the picture, FYI it'll open your email.)
+  </div>
+  <div class="col-sm-4 text-center">
+    <h1>Or...</h1>
+    <p class="lead" style="font-family: brushfont;">You can leave.</p>
+    <button type="button" class="btn btn-primary disabled" style="align-content: center;">Close Page</button>
+    <p class="text-muted" style="padding-top: 10px;">Yeah, that button's disabled!</p>
+    <p class="text-muted">Time for plan B.</p>
+  </div>
+
+  <div class="row exit"; style="text-align: center;">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-12">
+
+<p class="lead">Whatever you choose to do, thanks for coming by.</p>
+<p class="lead">Make sure to swing back, it's only going to get better.</p>
+
+</div>
+
+ <div class="col-sm-2">
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<footer class="container-fluid text-center">
+  <a href="#AboutMe" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>BACK TO TOP</p>
+</footer>
+</div>
+
+
+<script>
+var i = 0;
+var txt = 'A help desk consultant. \n\
+Aspiring web developer/programmer.\n\
+When I am not at said help desk, I\'m messing around with Web Design. \n\
+HTML, CSS, JavaScript, jQuery and Bootstrap.\n\
+I have an Associates Degree in \n\
+Computer Information Systems.\n\
+It was focused on programming, mainly C++ and Java.';
+    
+var speed = 25; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("AboutMe2").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+<!-- SMOOTH SCROLL CONTROLS -->
+
+<script>
+  $(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
+
+<!-- END SMOOTH SCROLL -->
+
+
+<!-- FOR THE SMOOTH SCROLL -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== ""){
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+<!-- END SMOOTH SCROLL -->
+  
+
+</body>
+</html>
