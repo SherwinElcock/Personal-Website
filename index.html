@@ -26,7 +26,7 @@
   }
 /* Custom Scrollbar
 /* width */
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 10px;
 }
 
@@ -35,19 +35,19 @@
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+/*::-webkit-scrollbar-track {
     background: blue; 
-}
+}*/
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+/*::-webkit-scrollbar-thumb {
     background: black; 
-}
+}*/
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/*::-webkit-scrollbar-thumb:hover {
     background: white; 
-}
+}*/*/
 /* End scrollbar */
 
 
@@ -100,13 +100,6 @@
     padding: 60px 50px;
     padding-top: 50px;
   }
-
-/* Typewriter text */
-#AboutMe2{
-  color:blue;
-  white-space: pre-wrap;
-
-}
 
 /* Resume Section Heading */
 #ResHead{
@@ -234,11 +227,12 @@
 
 
 #portfolio{text-align: center;
-background: red; /* For browsers that do not support gradients */
-    background: linear-gradient(to bottom right, #800000, #ff6666); /* Standard syntax (must be last) */}
+/*background: red;  For browsers that do not support gradients */
+    /*background: linear-gradient(to bottom right, #800000, #ff6666); Standard syntax (must be last) */
+  }
 
 
-#foliotext{color:white;}
+#foliotext{color:#000040;}
 
 #foliotextdark{color:#04045e;
 text-align: left;}
@@ -281,29 +275,7 @@ color:red;}
 	color: blue;
 	transform: rotateX(20deg);
 	-webkit-transform: rotateX(20deg);
-/*animation-name: wiggle;*/
-/*-webkit-animation-name:wiggle;
--webkit-animation-duration: 5s;
-animation-duration: 5s;
-animation-iteration-count: infinite;*/
 }
-
-/* Safari 4.0 - 8.0 */
-/*@-webkit-keyframes wiggle{
-	0%{transform: rotateX(0deg)};
-	25%{transform: rotateX(20deg)};
-	50%{transform: rotateX(0deg)};
-	75%{transform: rotateX(-20deg)};
-	100%{transform: rotateX(0deg)};
-}*/
-/* Standard syntax */
-/*@keyframes wiggle {
-    0%{transform: rotateX(0deg)};
-	25%{transform: rotateX(20deg)};
-	50%{transform: rotateX(0deg)};
-	75%{transform: rotateX(-20deg)};
-	100%{transform: rotateX(0deg)};
-}*/
 
 /*This Site  CSS*/
 #folioHeading{
@@ -316,7 +288,6 @@ animation-iteration-count: infinite;*/
 	animation-delay:2s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-
 }
 
 /* Safari 4.0 - 8.0 */
@@ -438,14 +409,64 @@ animation-iteration-count: infinite;*/
  /*#NightTimeOpac{background-image:url("code.png");}*/
 }
 
-.tricks{color: purple;
+.tricks{color: #008000;
 text-transform: uppercase;
 text-align: center;
-font-size: 2em;}
+font-size: 1.8em;}
 
+
+.button {
+    /*Change buttons to block elements */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  padding: 15px 25px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #000066;
+}
+
+.button:hover {background-color: #7F7FB2}
+
+.button:active {
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+  background-color: #3e8e41;
+}
+
+
+#boot2{-webkit-animation-name:rotatecolors2 10s infinite;
+    animation: rotatecolors2 10s infinite;}
+
+    @-webkit-keyframes rotatecolors2{
+    0%{background-color: black;}
+    25% {background-color: white;}
+    50% {background-color: brown;}
+    75% {background-color: orange;}
+    100% {background-color: green;}
+   }
+
+#intro{color: white;
+background-color: black;}
+
+.trickssection{color:white;}
+
+.topsection{padding-top: 50px;
+padding-bottom: 50px;}
+
+.Learned{color: white;}
+#htmlsyntax{text-align: center;
+color:#D3D3D3;}
 </style>
 
-<body onload="typeWriter();" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -467,199 +488,102 @@ font-size: 2em;}
   </div>
 </nav>
 
-<div id ="intro" class="container-fluid" id="AboutMe" style="margin-top:15px;">
+<div id ="intro" class="container-fluid" id="AboutMe" style="margin-top:15px; min-height: 100vh;">
 
-    <div class="col-sm-12 jumbotron Pitch" style="background-color: white;"><h1> Hey, I'm Sherwin</h1>
-    <div class="col-sm-7"><p id="AboutMe2"></p></body></div>
-    <div class="col-sm-5">
-
-      <img class="img-responsive myPic" src="me2.png" alt="Sherwin Elcock" width="360" height="245"> 
-    </div>
+    <div class="col-sm-12 jumbotron Pitch" style="background-color: black;"><h1> Hey, I'm Sherwin</h1></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10"> 
+    <p class="flydown">A help desk consultant. Aspiring web developer/programmer.</p>
+<p>When I am not at said help desk, I'm hacking away at one of my side projects. </p>
+<p>I have an Associates Degree in Computer Information Systems.</p>
+<p>It was focused on programming, mainly C++ and Java.</p>
+<p>I've been doing Front-End Development for 2 years now.</p></body></div>
+    <div class="col-sm-1">
 </div>
 </div>
+</div>
 
-
-<div id="AboutMe" class="container-fluid projContents" style= "background:radial-gradient(circle, #74A6EE 0%, #485CB2 100%); padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh;">
-
-
+<div class="container-fluid" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh";>
   <div class="row slideanim">
-     <h1 id="projectHeading">Help Desk</h1>
-     <p style="text-align: center; padding-bottom: 2em;">Besides the <i class="fa fa-volume-control-phone" style="font-size:36px"></i> I've picked up.</p>
+    <p id="htmlsyntax"> &#60;h1&#62;</p>
+     <h1 id="nightHeading">I use</h1>
+     <p id="htmlsyntax"> &#60;/h1&#62;</p>
    </div>
 
-  <div class="row slideanim">
+      <div class="row slideanim topsection" style="padding-top: 3em;">
+  <div class="col-sm-4">
+     <img class="img-responsive" src="html5logo.png" alt="HTML logo" style="height:150px;">
+  </div>
 
   <div class="col-sm-4">
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#OS" style="color: #FF6600;">Troubleshooting</a>
-        </h4>
-      </div>
-      <div id="OS" class="panel-collapse collapse">
-        <div class="panel-body">
-          <p class="lead">- Mac OS</p>
-          <p class="lead">- Windows</p>
-          <ul>
-            <li  class="lead">7 , 8, 10</li>
-          </ul>
-          <p  class="lead">Data Encryption</p> 
-          <p  class="lead">Backups and Recovery</p> 
-        </div>
-      </div>
-    </div>
-    </div>
-
-<div class="panel-group" id="accordion">
-<div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="color: #FF6600;">Applications</a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">
-          <ul>
-            <ul class="lead">Microsoft</ul>
-            <li class="lead">Word</li>
-            <li class="lead">Excel</li>
-            <li class="lead">PowerPoint</li>
-            <li class="lead">SharePoint</li>
-          </ul>
-          <ul>
-          <ul class="lead">Others</ul>
-          <li class="lead">Mac Suite</li>
-          <li class="lead">Googles Apps</li>
-          <p class="lead">Google exists... We can figure it out.</p>
-        </ul>
-
-        </div>
-      </div>
-          </div>
-      </div>
-    </div>
-     <div class="col-sm-4">
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#Network" style="color: #FF6600;">Network Fundamentals</a>
-        </h4>
-      </div>
-      <div id="Network" class="panel-collapse collapse">
-        <div class="panel-body lead">Understaning of Network fundamentals</div>
-      </div>
-    </div>
-    </div>
-   <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#Dtrouble" style="color: #FF6600;">Device Troubleshooting</a>
-        </h4>
-      </div>
-      <div id="Dtrouble" class="panel-collapse collapse">
-        <div class="panel-body"><p class="lead">Mobile Devices</p>
-          <ul>
-            <li class="lead">Apple and Android</li>
-          </ul>
-          <p class="lead">Printers</p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-    <div class="col-sm-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="color: #FF6600;">Virtualization</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body"><p class="lead">Familiar with set up of virtual machines.</p>
-          <p class="lead">Hyper-V, VMware Fusion</p>
-        </div>
-      </div>
-    </div>
-         <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#Applications" style="color: #FF6600;">User Training</a>
-        </h4>
-      </div>
-      <div id="Applications" class="panel-collapse collapse">
-        <div class="panel-body"><p class="lead">Helping users understand new software.</p>
-        </div>
-      </div>
-    </div>
-  </div> 
+    <img class="img-responsive" src="css.png" alt="CSS logo" style="height:150px;">
 </div>
-<div class="row slideanim">
-            <div class="col-sm-12">
-             <h1 id="projectHeading">Soft Skills</h1>
-            </div>
-            
-            <div class="col-sm-6">
-              <p class="lead">- Excellent problem solving and critical thinking skills.</p>
-              <!-- <p class="lead"> </p> -->
-              <p class="lead">- I know that it is important to explain what I am ABOUT to do and why.</p>
-              <p class="lead">- Ability to work in a team.</p>
-            </div>
-              <div class="col-sm-6">
-                <p class="lead">-Properly escalate unresolved queries to the appropriate level of support.
-              <p class="lead">(That might be the service agreement, or I may be flat out stumped (Google-fu can't find it).)</p>
-          </div>
-          <div class="w3-container">
+
+  <div class="col-sm-4">
+    <img class="img-responsive" src="JavascriptLogo.png" alt="JavaScript logo" style="height:150px;">
+  </div>
+</div>
+
+<div class="row slideanim topsection">
+<div class="col-sm-2"></div>
+ <div class="col-sm-4">
+    <!-- <h2 id="folioHeading"> Jquery</h2> -->
+    <img class="img-responsive" src="jquerylog.png" alt="jQuery logo" style="height:150px;">
+  </div>
+  <div class="col-sm-4">
+    <img class="img-responsive" src="Boostraplogo.png" alt="BootStrap logo" style="height:150px;">
+  </div>
+<div class="col-sm-2"></div>
+  </div>
+</div>
+</div>
+
+<!-- <div class="row slideanim" style="padding-top: 3em;">
+<div class="col-sm-6">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+    <!-- Indicators -->
+<!--     <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol> -->
+
+    <!-- Wrapper for slides -->
+<!--     <div class="carousel-inner">
+      <div class="item active">
+        <img class="img-responsive" src="iphone.png" alt="iPhone" style="height:500px;">
+      </div>
+
+      <div class="item">
+        <img class="img-responsive" src="ipad.png" alt="iPad" style="height:500px;">
+      </div>
+    </div> -->
+
+    <!-- Left and right controls -->
+<!--     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div> -->
+
+<!--   </div>
+</div>
+  </div> -->
+
+<div class="container-fluid row slideanim" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh; background-color: #000040">
   
-</div>
-     </div>
-  
-</div>
 
-
-<div class="container row slideanim" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh;">
-  <div class="">
-     <h1 id="nightHeading">At Night</h1>
-   </div>
-     <div class="row slideanim">
-
-<div class="col-sm-12 Learned">
-       <h2 id="night2" style="font-family: brushfont";>I mess with websites.</h2>
-      <p class="lead" > &#60;p class=&#34;lead&#34;&#62;I use <span class="nighttime">HTML</span> for the layout. &#60;/p&#62;</p>
-      <p class="lead" >To style and animate the layout <span class="nighttime">CSS.</span></p>
-       <p class="lead">JavaScript and JQuerry to "spruce it up" a little bit.</p>
-  </div>
-      <div class="row slideanim" style="padding-top: 3em;">
-      	<p style="text-align: center;"><span class="nighttime">Bootstrap.</span></p>
-      	<div class="col-sm-4" id="boot1">
-      <p class="lead" >You know </p>
-      <p class="lead">  The col-sm-4 </p>
-  </div>
-      	<div class="col-sm-4" id="boot2">
-      <p class="lead">to make it</p>
-      <p class="lead"> Again, another col-sm-4 </p>
-  		<!-- <p class="lead">I'll fall in under</p> -->
-  </div>
-      	<div class="col-sm-4" id="boot3">
-      <p class="lead"> responsive.</p>
-      <p class="lead"> To get to 12, col-sm-4 </p>
-      <!-- <p class="lead">But I'll go into the middle</p> -->
-  </div>
-     
-      
-    </div>
 
 <div class="row slideanim">
-<!-- <div class="col-sm-2"> -->
-	<!-- Spinner -->
-  <!-- <p><i class="fa fa-spinner w3-spin" style="font-size:50px"></i></p> -->
-  <!-- </div>	 -->
+
 <div class="col-sm-12">
 
-	<h1 style="text-align: center; padding-top: 25px;">Some tricks I've picked up.</h1>
-	<h3 style="text-align: center;">Headings are links - check them out. </h3>
+	<h1 class="Learned" style="text-align: center; padding-top: 25px;">Some tricks I've picked up.</h1>
+	<h3 class="Learned" style="text-align: center;">Headings are links. </h3>
 	
 </div>
 
@@ -672,8 +596,8 @@ font-size: 2em;}
 <div class="row slideanim" style="padding-top: 25px;">
 	<div class="col-sm-5">
 <a href = "parallax_scroll.html" target="_blank"><p class="lead tricks"> JavaScript Parallax Scroll</p></a>
-<p>Blue circles are the background.<p>
-<p>Then I have 5 different triangles, each on a different layer and scrolling at a different speed.<p>
+<p class="lead trickssection">Blue circles are the background.</p>
+<p class="lead trickssection">Then I have 5 different triangles, each on a different layer and scrolling at a different speed.</p>
 <p>
 </div>
 
@@ -682,149 +606,44 @@ font-size: 2em;}
 	</div>
 <div class="col-sm-5">
 	<a href = "fade_out.html" target="_blank"><p class ="lead tricks">JavaScript to Fade Out/In Elements</p></a>
-		<p>Target the opacity of the element.</p>
-		<p>In from 0 - 10.</p>
-		<p>Out from 10 - 0.</p>
+		<p class="lead trickssection">Target the opacity of the element.</p>
+		<p class="lead trickssection">In from 0 - 10.</p>
+		<p class="lead trickssection">Out from 10 - 0.</p>
 	</div>
 	
 	</div>
 
       <div class="row slideanim" style="padding-top: 25px;">
-          <div class="col-sm-12 Learned text-center">
+          <div class="col-sm-12 text-center">
             
-            <p class="lead" id="app" style="font-family: brushfont; font-size:2em;"> 
-            I also speak a few non-human languages. Feel free check out what I'm working on</p>
+            <p class="lead trickssection" id="app" style="font-family: brushfont; font-size:1.5em;"> 
+            I also speak a few non-human languages. Feel free check out what I'm working on.</p>
+            <p class="lead">Unfamiliar with GitHub? Click "View Code" when page loads.</p>
           </div>
 <div class="row">
-	<div class="col-sm-4 Learned">
+	<div class="col-sm-4">
 	</div>
-          <div class="col-sm-4 Learned">
-          	<a href="#" title=""><img src="GitHub_Logo.png" class="img-responsive"></a>
+          <div class="col-sm-4">
+          	<a href="#" title=""><img src="GitHubLogoWhite.png" class="img-responsive"></a>
             </div> 
-          <div class="col-sm-4 Learned"> 
+          <div class="col-sm-4"> 
           </div>
       </div>
       <div class="row">
+
         <div class="col-sm-6">
-          <a href="https://github.com/SherwinElcock/Personal-Website" target="_blank"><p class="lead tricks">This site</a>
+          <a href="https://github.com/SherwinElcock/python" target="_blank"><button class="button">Python</button></a>
         </div>
         <div class="col-sm-6">
-          <a href="https://github.com/SherwinElcock/python" target="_blank"><p class="lead tricks">Python</a>
+          <a href="https://github.com/SherwinElcock/JavaScript"><button class="button">Javascript</button></a>
         </div>
         </div>
          
 </div>
 </div>
 </div>
-
-<div id="portfolio" class="container-fluid" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh;">
-  <div class="row slideanim" style="padding-top: 3em;">
-     <h1 id="portfolioHead">Portfolio</h1>
-  </div>
-  <div class="row slideanim col-sm-12">
-  <h2 style="font-size: 2.5em;"> This site </h2>
-  </div>
-  <div class="row slideanim">
-  <div class="col-sm-6">
-  	<h2 id="folioHeading"> The Basics </h2>
-    <p class="lead" id="foliotextdark">Made using HTML, CSS, JavaScript, JQuerry and BootStrap.</p>
-    <p class="lead" id="foliotextdark">It's responsive... It'll look good on any size screen/device.</p>
-    <p class="lead" id="foliotextdark">It's gone through many changes and will continue to, as I learn more.</p>
-    <p class="lead" id="foliotextdark">Gimp to edit images.</p>
-  
-  </div>
-
-
- <div class="col-sm-6">
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img class="img-responsive" src="iphone.png" alt="iPhone" style="height:500px;">
-      </div>
-
-      <div class="item">
-        <img class="img-responsive" src="ipad.png" alt="iPad" style="height:500px;">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
 </div>
 
-  </div>
-</div>
-
- <div class="row slideanim" style="padding-top: 3em;">
- 	<div class="col-sm-4">
-  	<h2 id="folioHeading"> CSS </h2>
-  </div>
-  	<div class="col-sm-8">
-  <p class="lead" id="foliotextdark">To make information slide into view.</p>    
-  <p class="lead" id="foliotextdark">To change text color on a cycle.</p>
-  <p class="lead" id="foliotextdark">To flip AT NIGHT heading on it's Y Axis</p>
-  <p class="lead" id="foliotextdark">To flip PORTFOLIO heading on it's X Axis</p>
-  <p class="lead" id="foliotextdark">I couldn't resist customizing the scroll bar.</p>
-</div>
-	</div>
-
-<div class="row slideanim" style="padding-top: 3em;">
-<div class="col-sm-6">
-  <h2 id="folioHeading">JavaScript & </h2>
-<h2 id="folioHeading">JQuerry</h2>
-</div>
-  <div class="col-sm-6">
-  <p class="lead" id="foliotextdark">Used JQuerry for the Smooth Scroll</p>
-  <p class="lead" id="foliotextdark">JavaScript for the typewriter effect in the opening.</p>
-<!--   <p class="lead" id="foliotextdark"></p>
-  <p class="lead" id="foliotextdark"></p>
-  <p class="lead" id="foliotextdark"></p>
-  <p class="lead" id="foliotextdark"></p> -->
-</div>
- </div>
-<!--  <div class="row slideanim" style="margin-top: 25px;">
-<div class="col-sm-12">
-  <h2 id="folioHeading2"> That site </h2>
-    </div>
-    <div class="row slideanim">
-  <div class="col-sm-4">
-    <p class="lead" id="foliotextdark"> This will </p>
-  </div>
-  <div class="col-sm-4">
-    <p class="lead" id="foliotextdark""> Have some information</p>
-    <p class="lead" id="foliotextdark""> EVENTUALLY</p>
-</div>
-<div class="col-sm-4">
-  <p class="lead" id="foliotextdark"> In it</p>
-</div>
-</div>
- </div> -->
-<div class="row slideanim" style="padding-top: 3em;">
-  <div class="col-sm-6">
-<h2 id="folioHeading"> Bootstrap</h2>
-</div>
-<div class="col-sm-6">
-<p class="lead" id="foliotextdark">Made use of the grid system to help with layout responsiveness.</p>
-<p class="lead" id="foliotextdark">The picture carousel.</p>
-<p class="lead" id="foliotextdark">Accordion effect in the Help Desk section.</p>
-</div>
-
-</div>
-</div>
 
 <!-- background:radial-gradient(circle, #74A6EE 0%, #485CB2 100%); -->
      <div id="Resume" class="container-fluid" style="background-color: #C8ECF7; padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; background-color: #D3D3D3;       min-height: 100vh;">
