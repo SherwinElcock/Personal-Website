@@ -232,10 +232,16 @@
   }
 
 
-#foliotext{color:#000040;}
+.foliotext{color:white;}
+
+.foliotextheading{color:white;
+text-align: center;}
 
 #foliotextdark{color:#04045e;
 text-align: left;}
+
+.foliotextver{color:white;
+text-align: center;}
 
 #parafoliotext{text-align: left;
 color:white;}
@@ -278,8 +284,10 @@ color:red;}
 }
 
 /*This Site  CSS*/
-#folioHeading{
-  font-size: 3em;
+.folioHeading{
+	color: white;
+	text-align: center;
+  /*font-size: 3em;
 	text-transform: uppercase;
 	-webkit-animation-name:swapcolor;
 	-webkit-animation-duration: 6s;
@@ -287,11 +295,11 @@ color:red;}
 	animation-duration: 6s;
 	animation-delay:2s;
 	animation-iteration-count: infinite;
-	animation-direction: alternate;
+	animation-direction: alternate;*/
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes swapcolor {
+/*@-webkit-keyframes swapcolor {
     0%{color: blue;}
     25% {color: yellow;}
     50% {color: gray;}
@@ -299,14 +307,14 @@ color:red;}
     100% {color: white;}
 }
 
-/* Standard syntax */
+ Standard syntax 
 @keyframes swapcolor {
     0%{color: blue;}
     25% {color: yellow;}
     50% {color: gray;}
     75% {color: purple;}
     100% {color: white;}
-}
+}*/
 /*End this site heading CSS*/
 
 #folioHeading2{
@@ -454,16 +462,31 @@ font-size: 1.8em;}
    }
 
 #intro{color: white;
+
 background-color: black;}
 
-.trickssection{color:white;}
+.trickssection{color:black;}
 
 .topsection{padding-top: 50px;
 padding-bottom: 50px;}
 
-.Learned{color: white;}
+.Learned{color: black;}
 #htmlsyntax{text-align: center;
 color:#D3D3D3;}
+
+.logo
+{margin: auto;
+padding-bottom: 25px;}
+
+.botsection{
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.fa{color: red;
+}
+.Pitch{margin-top: 1.5em;}
+
 </style>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -488,7 +511,7 @@ color:#D3D3D3;}
   </div>
 </nav>
 
-<div id ="intro" class="container-fluid" id="AboutMe" style="margin-top:15px; min-height: 100vh;">
+<div id ="intro AboutMe" class="container-fluid" id="AboutMe" style="margin-top:15px; min-height: 100vh;">
 
     <div class="col-sm-12 jumbotron Pitch" style="background-color: black;"><h1> Hey, I'm Sherwin</h1></div>
     <div class="col-sm-1"></div>
@@ -497,11 +520,19 @@ color:#D3D3D3;}
 <p>When I am not at said help desk, I'm hacking away at one of my side projects. </p>
 <p>I have an Associates Degree in Computer Information Systems.</p>
 <p>It was focused on programming, mainly C++ and Java.</p>
-<p>I've been doing Front-End Development for 2 years now.</p></body></div>
+<p>I've been doing Front-End Development for 2 years now.</p>
+</div>
     <div class="col-sm-1">
 </div>
+<div class="row slideanim">
+<!-- <div class="col-sm-12">
+
+<i style="font-size: 50px" class="fa">&#xf103;</i>
+</div> -->
 </div>
+
 </div>
+
 
 <div class="container-fluid" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh";>
   <div class="row slideanim">
@@ -512,69 +543,77 @@ color:#D3D3D3;}
 
       <div class="row slideanim topsection" style="padding-top: 3em;">
   <div class="col-sm-4">
-     <img class="img-responsive" src="html5logo.png" alt="HTML logo" style="height:150px;">
+     <img class="img-responsive logo" src="html5logo.png" alt="HTML logo" style="height:150px;">
   </div>
 
   <div class="col-sm-4">
-    <img class="img-responsive" src="css.png" alt="CSS logo" style="height:150px;">
+    <img class="img-responsive logo" src="css.png" alt="CSS logo" style="height:150px;">
+  </div>
+
+  <div class="col-sm-4">
+    <img class="img-responsive logo" src="JavaScriptlogo.png" alt="JavaScript logo" style="height:150px;">
 </div>
 
-  <div class="col-sm-4">
-    <img class="img-responsive" src="JavascriptLogo.png" alt="JavaScript logo" style="height:150px;">
-  </div>
 </div>
 
 <div class="row slideanim topsection">
 <div class="col-sm-2"></div>
  <div class="col-sm-4">
     <!-- <h2 id="folioHeading"> Jquery</h2> -->
-    <img class="img-responsive" src="jquerylog.png" alt="jQuery logo" style="height:150px;">
+    <img class="img-responsive logo" src="jquerylog.png" alt="jQuery logo" style="height:150px;">
   </div>
   <div class="col-sm-4">
-    <img class="img-responsive" src="Boostraplogo.png" alt="BootStrap logo" style="height:150px;">
+    <img class="img-responsive logo" src="Boostraplogo.png" alt="BootStrap logo" style="height:150px;">
   </div>
 <div class="col-sm-2"></div>
   </div>
+
+<div class="row slideanim botsection">
+	<div class="col-sm-12">
+	<h2>Other Tools I Use</h2>
+</div>
+<div class="row botsection">
+	<div class="col-sm-6">
+	<p>GitHub<p>
+	<p>Gimp </p>
+	</div>
+	<div class="col-sm-6">
+	<p>SASS</p>
+	<p>WordPress</p> 
+	</div>
 </div>
 </div>
 
-<!-- <div class="row slideanim" style="padding-top: 3em;">
-<div class="col-sm-6">
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
-    <!-- Indicators -->
-<!--     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol> -->
-
-    <!-- Wrapper for slides -->
-<!--     <div class="carousel-inner">
-      <div class="item active">
-        <img class="img-responsive" src="iphone.png" alt="iPhone" style="height:500px;">
-      </div>
-
-      <div class="item">
-        <img class="img-responsive" src="ipad.png" alt="iPad" style="height:500px;">
-      </div>
-    </div> -->
-
-    <!-- Left and right controls -->
-<!--     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div> -->
-
-<!--   </div>
 </div>
-  </div> -->
 
-<div class="container-fluid row slideanim" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh; background-color: #000040">
+<div class="container-fluid" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh; background-color:#000040;"">
+	<div class="row slideanim">
+		<h1 class="folioHeading">Work I've Done</h1>
+	</div>	
+	<div class="row slideanim">
+		<div class="col-sm-6">
+			<h2 class="foliotextheading">This Site</h2>
+			<p class="foliotext">Built from SCRATCH to be responsive</p>
+			<p class="foliotext">Using HTML, CSS, JavaScript, JQuerry and Bootstrap</p>
+			<p class="foliotext">Followed a design process:</p>
+			<p class="foliotext">Sitemap</p>
+			<p class="foliotext">Sketch/Mockup</p>
+			<p class="foliotext">Wireframe</p>
+			<p class="foliotext">Development</p>
+			<p class="foliotext">Check it out here.</p>
+
+	</div>
+	<div class="col-sm-6">
+		<h2 class="foliotextheading">Versions</h2>
+		<a href="version1.html" target="_blank"><p class="foliotextver">Version 1</p></a>
+		<a href="version2.html" target="_blank"><p class="foliotextver">Version 2</p></a>
+		<p class="foliotextver">To what you're viewing now.</p>
+	</div>
+</div>
+</div>
+
+
+<div class="container-fluid row slideanim" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh;">
   
 
 
@@ -582,8 +621,8 @@ color:#D3D3D3;}
 
 <div class="col-sm-12">
 
-	<h1 class="Learned" style="text-align: center; padding-top: 25px;">Some tricks I've picked up.</h1>
-	<h3 class="Learned" style="text-align: center;">Headings are links. </h3>
+	<h1 class="Learned" style="text-align: center; padding-top: 25px;">What I'm Working On</h1>
+	<a href="http://www.sherwinelcock.com/blog" target="_blank"><h3 class="Learned" style="text-align: center;">WordPress Blog </h3>
 	
 </div>
 
@@ -624,7 +663,7 @@ color:#D3D3D3;}
 	<div class="col-sm-4">
 	</div>
           <div class="col-sm-4">
-          	<a href="#" title=""><img src="GitHubLogoWhite.png" class="img-responsive"></a>
+          	<img class="img-responsive" src="GitHub_Logo.png" class="img-responsive">
             </div> 
           <div class="col-sm-4"> 
           </div>
@@ -658,7 +697,7 @@ color:#D3D3D3;}
             <p id="jobTitle">Productivity Consultant</p>
 </div>
 <div class="col-sm-8">
-    <p id="Duties">Duties</p>
+    <p id="Duties">What I Do</p>
     <p class="lead">Responsible for initial support for PC, Network, printing and hardware/software functionality in accordance to Service Level Agreements.</p>
     <p class="lead">Address customer contacts (telephone or email) promptly and efficiently within a specific timeframe to provide a defined level of service and availability to the customer.</p>
     <p class="lead">Ensure proper recording, documentation and closure of tickets.</p>
@@ -684,7 +723,7 @@ color:#D3D3D3;}
     <p id="jobTitle">Imaging Tech</p>
 </div>
 <div class="col-sm-8">
-    <p id="Duties">Duties</p>
+    <p id="Duties">What I Did</p>
     <p class="lead">Using appropriate software, Assist doctors and patients in acquiring and viewing medical images.</p>
     <p class="lead">Maintain Radiology records according to HIPPA compliance standards.</p>
     
