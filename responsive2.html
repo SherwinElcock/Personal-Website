@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="cardflip.css">
+<link rel="stylesheet" type="text/css" href="resume_section.css">
+<link rel="stylesheet" type="text/css" href="imageoverlay.css">
+  <title>Sherwin Elcock</title>
+<!-- width=device-width sets the width of the page to the width of the device -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.main{margin-bottom: 5em;}
+/*To make sure that the padding and border are included in total height and width of elements*/
+* {
+    box-sizing: border-box;
+}
+/*Navigation to fix in the middle of page*/
+/*.nav {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    background: #D3D3D3;
+    overflow-x: hidden;
+    padding: 8px 0;
+}*/
+/*=========================================================================
+        To make images scale based on screen
+======================================================================== */
+.responsive {
+    width: 75%;
+    max-width: 100%;
+    height: auto;
+}
+/*Header text*/
+.bluetext{color: #0000FF}
+#header {
+    /*border: 1px solid red;*/
+    padding: 15px;
+    text-align: center;
+}
+#extratools{
+  height: 100vh; 
+  /*border: 1px solid red; */
+  margin-bottom: 3em;
+}
+#portfolio{text-align:center;}
+#xtraportfolio{
+  text-align: center;
+}
+/*Wordpress link*/
+#bloglink{ 
+  text-align: center;
+  color:orangered;}
+/*Headings on what i'm workng on cards - Portfolio Section*/
+.tricks{
+  text-align: center;
+  font-size: 1.5em;
+}
+a {
+  text-decoration: none;
+}
+/*To prevent elements from ignoring items in columns*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row{margin-bottom: 3em;
+width:100%;}
+/*Float each column to the left and give it padding*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*=========================================================================
+Uncomment to see the border around each column
+======================================================================== */
+    /*border: 1px solid red;*/
+}
+/*Using 12 columns this is the math breakdown 100/12*/
+/*Class for each column*/
+/*=========================================================================
+        For mobile phones: Everything up to 600px iphone/Portrait
+======================================================================== */
+@media only screen and (max-width: 600px){
+.tools{color: purple;}
+.col-xs-1 {width: 8.33%;}
+.col-xs-2 {width: 16.66%;}
+.col-xs-3 {width: 25%;}
+.col-xs-4 {width: 33.33%;}
+.col-xs-5 {width: 41.66%;}
+.col-xs-6 {width: 50%;}
+.col-xs-7 {width: 58.33%;}
+.col-xs-8 {width: 66.66%;}
+.col-xs-9 {width: 75%;}
+.col-xs-10 {width: 83.33%;}
+.col-xs-11 {width: 91.66%;}
+.col-xs-12 {width: 100%;}
+  
+ /*Stick the nav bar to the bottom of phone screen */
+.nav{
+  overflow: hidden;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  background-color: orange;
+}
+/*Navbar link text styles*/
+.nav a{
+  text-decoration: none;
+  color: red;
+  float: left;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1em;
+}
+p{
+  font-size: 1em;}
+}
+#jects{
+  width: 90%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px #FF7F50;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+#jects2{
+  width: 90%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px #ADD8E6;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+#jects3{
+  width: 90%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px green;
+  margin-left: 1em;
+}
+#jects4{
+  width: 90%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px blue;
+  margin-left: 1em;
+}
+/*=========================================================================
+       Extra small devices (phones, 600px and up) iPhone landscape
+======================================================================== */
+@media only screen and (min-width: 600px) {
+  .nav{
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: purple;
+}
+/*Navbar link text styles*/
+.nav a{
+  text-decoration: none;
+  color: red;
+  float: left;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1em;
+}
+.tools{color: yellow;}
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
+a:active{color: blue;}
+/*Portfolio Section Cards*/
+#jects{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px #FF7F50;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+#jects2{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px #ADD8E6;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+#jects3{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px orange;
+  margin-left: 1em;
+}
+#jects3{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px red;
+  margin-left: 1em;
+}
+/*=========================================================================
+        Medium devices (landscape tablets, 768px and up) ipad portrait
+======================================================================== */
+@media only screen and (min-width: 768px){
+  /*Stick the nav bar to the top of phone screen */
+.nav{
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: orange;
+}
+/*Navbar link text styles*/
+.nav a{
+  text-decoration: none;
+  color: red;
+  float: left;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1em;
+}
+.tools{color: blue;}
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
+#jects{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px #FF7F50;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+#jects2{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px #ADD8E6;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+#jects3{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px orange;
+  margin-left: 1em;
+}
+#jects4{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px brown;
+  margin-left: 1em;
+}
+/*=========================================================================
+        Large devices (laptops/desktops, 992px and up) iPad landscape
+======================================================================== */
+@media only screen and (min-width: 992px){ 
+.nav{
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: blue;
+}
+/*Navbar link text styles*/
+.nav a{
+  text-decoration: none;
+  color: red;
+  float: left;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1em;
+}
+.tools{color:orange;}
+.col-l-1 {width: 8.33%;}
+.col-l-2 {width: 16.66%;}
+.col-l-3 {width: 25%;}
+.col-l-4 {width: 33.33%;}
+.col-l-5 {width: 41.66%;}
+.col-l-6 {width: 50%;}
+.col-l-7 {width: 58.33%;}
+.col-l-8 {width: 66.66%;}
+.col-l-9 {width: 75%;}
+.col-l-10 {width: 83.33%;}
+.col-l-11 {width: 91.66%;}
+.col-l-12 {width: 100%;}
+#jects{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px red;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects2{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px yellow;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects3{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px yellow;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects4{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px yellow;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+/*.nav {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    background: #D3D3D3;
+    overflow-x: hidden;
+    padding: 8px 0;
+}*/
+}
+/*=========================================================================
+        Extra large devices (large laptops and desktops, 1200px and up) Mac
+======================================================================== */
+@media only screen and (min-width: 1200px) 
+{
+.nav{
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: green;
+}
+/*Navbar link text styles*/
+.nav a{
+  text-decoration: none;
+  color: red;
+  float: left;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1em;
+}
+/*Move header down only on screens when the header is on the top*/
+#header{margin-top: 4em;}
+.tools{color:red;}
+/*Riddle heading - on big screen add a top border*/
+#riddle{border-top: 1px black;}
+/*Start of column math */
+.col-xl-1 {width: 8.33%;}
+.col-xl-2 {width: 16.66%;}
+.col-xl-3 {width: 25%;}
+.col-xl-4 {width: 33.33%;}
+.col-xl-5 {width: 41.66%;}
+.col-xl-6 {width: 50%;}
+.col-xl-7 {width: 58.33%;}
+.col-xl-8 {width: 66.66%;}
+.col-xl-9 {width: 75%;}
+.col-xl-10 {width: 83.33%;}
+.col-xl-11 {width: 91.66%;}
+.col-xl-12 {width: 100%;}
+#jects{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px red;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects2{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px blue;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects3{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px yellow;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects4{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px green;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+/*What to do if it goes landscape*/
+/*@media only screen and (orientation: landscape)
+       /*{.menu{background-color: orange;}*/
+    
+/*Hide elements*/
+    @media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+/*@media screen and (max-width: 900px) {
+    ul.nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.nav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}*/
+.tools{text-align: center;}
+.pitch{
+  font-size: 1.5em;
+  color: blue;}
+.logotext{text-align: center;}
+</style>
+</head>
+<body>
+  <div  class="nav">
+    <a href="#aboutme">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</div>
+<div id="header">
+<h1> Hey, <span class="bluetext">I'm Sherwin</span></h1>
+</div>
+<div class="main">
+<div class="row">
+<div id="aboutme" class="col-xs-12 col-s-12 col-m-12 col-l-12 pitch">
+<p>A help desk consultant. </p>
+<p>Aspiring web developer/programmer.</p>
+<p>When I am not at said help desk, I'm hacking away at one of my side projects. </p>
+<p>I have an Associates Degree in Computer Information Systems.</p>
+<p>It was focused on programming, mainly C++ and Java.</p>
+<p>I've been doing Front-End Development for 2 years now.</p>
+</div>
+</div>
+</div>
+<h1 class="tools" style="text-align:center">I USE</h1>
+  
+<div class="row">
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
+  <img src="html5logo.png" alt="HTML logo" style="height:150px;" class="responsive">
+  <p class="logotext">How can you build a website without this?</p>
+</div>
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
+  <img src="css.png" alt="CSS logo" style="height:150px;" class="responsive">
+  <p class="logotext">To style the page</p>
+  <p class="logotext">Built my own responsive grid.</p>
+  <p class="logotext">Resize the browser/or flip your device orientation.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
+  <img src="JavaScriptlogo.png" alt="JavaScript logo" style="height:150px;" class="responsive">
+  <p class="logotext">Used for the type writer effect</p>
+  
+</div>
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
+  <img src="jquerylog.png" alt="jQuery logo" style="height:150px;" class="responsive">
+</div>
+</div>
+<!-- Other Tools I Use -->
+<div class="row">
+<div class="col-xs-12 col-s-12 col-m-12 col-l-12">
+  <h1 id="xtraportfolio">Other Tools I Use</h1>
+</div>
+</div>
+<!-- <div class="row">
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="extratools"> -->
+    <div id="extratools">
+    <p class="xtools">GitHub</p>
+    <p class="xtools">Woodpress</p>
+    <p class="xtools">Bootstrap</p>
+    <p class="xtools">Chrome Developer Tools</p>
+    <p class="xtools">HTML Validator</p>
+  </div>
+<!-- Portfolio Section -->
+<div class="row">
+<div class="col-xs-12 col-s-12 col-m-12 col-l-12">
+  <h1 class id="portfolio">What I'm Working On</h1>
+  
+    <a href="http://www.sherwinelcock.com/blog" target="_blank" id="bloglink"><h3>Follow Here: WordPress Blog </h3></a>
+</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects">
+  <a href = "fade_out.html" target="_blank"><p class ="tricks">CSS Responsive Grid</p></a>
+    <p class="lead trickssection">Build one from scrath for this site.</p>
+    <p class="lead trickssection">As with anything, it's a work in progress.</p>
+    <p class="lead trickssection">Still looking for ways to make it better.</p>
+</div>
+<div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects2">
+  <a href = "fade_out.html" target="_blank"><p class ="tricks">JavaScript Parallax Scroll</p></a>
+    <p class="lead trickssection">Blue circles are the fixed position background.</p>
+    <p class="lead trickssection">Triangles are each on a differnet layer and scrolling at a different speed.</p>
+    <p class="lead trickssection">Out from 10 - 0.</p>
+  </div>
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects3">
+  <a href = "fade_out.html" target="_blank"><p class ="tricks">JavaScript to Fade Out/In Elements</p></a>
+    <p class="lead trickssection">Target the opacity of the element.</p>
+    <p class="lead trickssection">In from 0 - 10.</p>
+    <p class="lead trickssection">Out from 10 - 0.</p>
+    
+  </div>
+    <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects4">
+ <a href = "parallax_scroll.html" target="_blank"><p class="tricks"> To be uploaded...</p></a>
+<p class="trickssection">Simple CSS animations.</p>
+<p class="trickssection">SVG drawings/image manipulation.</p>
+  </div>
+</div>
+<!--Styled in resume_section.css-->
+  <h1 class="Resume" style="text-align:center">Resume</h1>
+<div id="resume" class="row resume_part">
+  <div class="col-xs-12 col-s-4 col-m-4 col-l-4">
+  <h3><span style="color:orangered;" class="employer">Vitalyst - 10/2016 - Present</span></h3>
+            <p id="jobTitle">Productivity Consultant</p>
+          </div>
+    <div class="col-xs-12 col-s-8 col-m-8 col-l-8">
+      <div class="test">
+    <p class="dutyheading">What I Do</p>
+    <p class="duties">Responsible for initial support for PC, Network, printing and hardware/software functionality in accordance to Service Level Agreements.</p>
+    <p class="duties">Address customer contacts (telephone or email) promptly and efficiently within a specific timeframe to provide a defined level of service and availability to the customer.</p>
+    <p class="duties">Ensure proper recording, documentation and closure of tickets.</p>
+    <p class="duties">Properly escalate unresolved queries to the appropriate level of support.</p>
+    <p class="duties">Train users who are new to software.</p>
+</div>
+</div>
+<div class="col-xs-12 col-s-4 col-m-4 col-l-4">
+<h3><span style="color:#83bd42" class="employer" id="riddle">Riddle Hospital - 10/2004-2/2016</span></h3>
+    <p class="jobTitle">Imaging Tech</p>
+</div>
+    <div class="col-xs-12 col-s-8 col-m-8 col-l-8">
+    <p class="dutyheading">What I Did</p>
+    <p class="duties">Using appropriate software, Assist doctors and patients in acquiring and viewing medical images.</p>
+    <p class="duties">Maintain Radiology records according to HIPPA compliance standards.</p>
+</div>
+</div>
+<h1 class="tools4" style="text-align:center">Contact</h1>
+<div id="contact" class="row">
+<!-- <div class="col-xs-6 col-s-6 col-m-6 col-l-6">
+  <p><a class="LI-simple-link" href='https://www.linkedin.com/in/sherwin-elcock-96ab8760?trk=profile-badge'><img class="img-responsive" src="linkedlogo.png" alt="Link to Public Linked in Profile"></a></p>
+  <p>I have twitter, facebook... Couldn't tell you when the last time logged in was.</p>
+</div> -->
+<div class="col-xs-6 col-s-6 col-m-6 col-l-6">
+  <p>Linkedin Profile Link</p>
+  <p>Email Link</p> 
+</div>
+</div>
+<!-- <div class="col-xs-6 col-m-6 col-xs-6 col-s-4 col-m-6 col-l-3">
+<img src="me1.jpg" alt="jQuery logo" style="height:100px width:10px;">
+</div> -->
+</body>
+</html>
