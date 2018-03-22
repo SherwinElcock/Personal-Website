@@ -1,837 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Sherwin Elcock</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  
-
-</head>
-
-<style type="text/css">
-.panel {
-    height: 100%;
-    width: 100%;
-  }
-/* Custom Scrollbar
-/* width */
-/*::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-button{
-  width:10px;
-}
-
-/* Track */
-/*::-webkit-scrollbar-track {
-    background: blue; 
-}*/
- 
-/* Handle */
-/*::-webkit-scrollbar-thumb {
-    background: black; 
-}*/
-
-/* Handle on hover */
-/*::-webkit-scrollbar-thumb:hover {
-    background: white; 
-}*/*/
-/* End scrollbar */
-
-
-@font-face{
-  font-family:brushfont;
-  src: url("caveatbrush.ttf");
-}
-
-@font-face{
-  font-family:Aileron;
-  src: "Aileron-Regular.otf";
-}
-
-/* To make the elements slide in */
-.slideanim {visibility:hidden;}
-.slide {
-/* The name of the animation */
-  animation-name: slide;
-  -webkit-animation-name: slide; 
-/* The duration of the animation */
-  animation-duration: 1s; 
-  -webkit-animation-duration: 1s;
-/* Make the element visible */
-  visibility: visible; 
-}
-
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-@keyframes slide {
-    0% {
-  opacity: 0;
-  transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    } 
-}
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-}
-
-.container {
-    padding: 60px 50px;
-    padding-top: 50px;
-  }
-
-/* Resume Section Heading */
-#ResHead{
-	font-family: Ubuntu, sans-serif;
-  font-weight: bold;
-  font-size: 5em;
-  text-align: center;
-  text-transform: uppercase;
-  color: blue;
-}
-
-/* 8 Column Duties Section in Resume */
-#Duties{
-  text-transform: uppercase;
-  font-size: 1.5em;
-  margin-top: 1em;
-  text-decoration: underline;
-}
-
-/* For Vitalyst and Riddle info*/
-#jobTitle{
-  font-size: 1.5em;
-}
-
-/* First Section Heading */
-#projectHeading{
-  font-family: Ubuntu, sans-serif;
-  font-weight: bold;
-  font-size: 3em;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 1em;
-  animation-name: fun;
-  animation-duration: 10s;
-}
-
-@keyframes fun{
-	0%{transform: rotateX(360deg)};
-	25%{transform: rotateX(-270deg)};
-	50%{transform: rotateX(-180deg)};
-	75%{transform: rotateX(270deg)};
-	100%{transform: rotateX(360deg)};
-}
-/*To make it flip around on the Y axis*/
-/*Safari*/
-@-webkit-keyframes fun{
-	0%{transform: rotateY(360deg)};
-	25%{transform: rotateY(-270deg)};
-	50%{transform: rotateY(180deg)};
-	75%{transform: rotateY(270deg)};
-	100%{transform: rotateY(360deg)};
-}
-
-
-.jectContents{
-	font-family: "Open Sans";
-  color: #FF6600;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* "At Night" */
-#nightHeading{
-  font-family: Ubuntu, sans-serif;
-  font-weight: bold;
-  font-size: 5em;
-  text-align: center;
-  text-transform: uppercase;
- -webkit-animation-name: wiggle;
-	animation-iteration-count: infinite;
-	-webkit-animation-duration: 5s;
-	animation-name: wiggle;
-	animation-duration: 5s;
-}
-
-/*Portfolio Section*/
-
-#portfolioHead{
-	font-family: Ubuntu, sans-serif;
-  font-weight: bold;
-  font-size: 4em;
-  text-transform: uppercase;
-	/*color: white;*/
-	-webkit-animation-name: rotate;
-	animation-iteration-count: infinite;
-	-webkit-animation-duration: 5s;
-	animation-name: rotate;
-	animation-duration: 5s;
-}
-@-webkit-keyframes wiggle{
-	0%{transform: rotateX(360deg)};
-	25%{transform: rotateX(-270deg)};
-	50%{transform: rotateX(-180deg)};
-	75%{transform: rotateX(270deg)};
-	100%{transform: rotateX(360deg)};
-}
-
-/*Standard*/
-@keyframes wiggle{
-	0%{transform: rotateX(360deg)};
-	25%{transform: rotateX(-270deg)};
-	50%{transform: rotateX(-180deg)};
-	75%{transform: rotateX(270deg)};
-	100%{transform: rotateX(360deg)};
-}
-/*To make it flip around on the Y axis*/
-/*Safari*/
-@-webkit-keyframes rotate{
-	0%{transform: rotateY(360deg)};
-	25%{transform: rotateY(-270deg)};
-	50%{transform: rotateY(180deg)};
-	75%{transform: rotateY(270deg)};
-	100%{transform: rotateY(360deg)};
-}
-
-/*Standard*/
-@keyframes rotate{
-	0%{transform: rotateY(360deg)};
-	25%{transform: rotateY(-270deg)};
-	50%{transform: rotateY(-180deg)};
-	75%{transform: rotateY(270deg)};
-	100%{transform: rotateY(360deg)};
-}
-
-
-#portfolio{text-align: center;
-/*background: red;  For browsers that do not support gradients */
-    /*background: linear-gradient(to bottom right, #800000, #ff6666); Standard syntax (must be last) */
-  }
-
-
-.foliotext{color:white;}
-
-.foliotextheading{color:white;
-text-align: center;}
-
-#foliotextdark{color:#04045e;
-text-align: left;}
-
-.foliotextver{color:white;
-text-align: center;}
-
-#parafoliotext{text-align: left;
-color:white;}
-
-
-/* Contact Section */
-#contact{
-  text-transform: uppercase;
-  text-align: center;
-  color: blue;
-}
-#emailText{
-  font-size: 1.5em;
-  color: blue;
-}
-
-/*Closing remarks style*/
-.exit{color: red;}
-
-a{color: black;}
-
-/* What i've picked up */
-h4{color: #FF6600;}
-
-#night2{
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;text-align: center;
-color:red;}
-
-/*At Night Section*/
-#tester{
-  opacity:0.2;}
-
-
-/*Text inside at Night Section*/
-.nighttime{
-	font-size: 5em;
-	color: blue;
-	transform: rotateX(20deg);
-	-webkit-transform: rotateX(20deg);
-}
-
-/*This Site  CSS*/
-.folioHeading{
-	color: white;
-	text-align: center;
-  /*font-size: 3em;
-	text-transform: uppercase;
-	-webkit-animation-name:swapcolor;
-	-webkit-animation-duration: 6s;
-	animation-name: swapcolor;
-	animation-duration: 6s;
-	animation-delay:2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;*/
-}
-
-/* Safari 4.0 - 8.0 */
-/*@-webkit-keyframes swapcolor {
-    0%{color: blue;}
-    25% {color: yellow;}
-    50% {color: gray;}
-    75% {color: purple;}
-    100% {color: white;}
-}
-
- Standard syntax 
-@keyframes swapcolor {
-    0%{color: blue;}
-    25% {color: yellow;}
-    50% {color: gray;}
-    75% {color: purple;}
-    100% {color: white;}
-}*/
-/*End this site heading CSS*/
-
-#folioHeading2{
-	text-transform: uppercase;
-	-webkit-transform: rotateX(20deg);
-	transform: rotateX(20deg);
-	-webkit-animation-name:swapcolor2;
-	-webkit-animation-duration: 6s;
-	animation-name: swapcolor2;
-	animation-duration: 6s;
-	animation-delay:2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-
-}
-@-webkit-keyframes swapcolor2{
-    0%{color: green;}
-    25% {color: black;}
-    50% {color: white;}
-    75% {color: brown;}
-    100% {color: orange;}
-}
-
-/* Standard syntax */
-@keyframes swapcolor2 {
-    0%{color: green;}
-    25% {color: black;}
-    50% {color: white;}
-    75% {color: brown;}
-    100% {color: orange;}
-}
-
-#boot1{/*background-color: green;*/
-	-webkit-animation-name:rotatecolors 10s infinite;
-    animation: rotatecolors 10s infinite;
-}
-
-@-webkit-keyframes rotatecolors{
-    0%{background-color: green;}
-    25% {background-color: black;}
-    50% {background-color: white;}
-    75% {background-color: brown;}
-    100% {background-color: orange;}
-   }
-
- @keyframes rotatecolors{
-    0%{background-color: green;}
-    25% {background-color: black;}
-    50% {background-color: white;}
-    75% {background-color: brown;}
-    100% {background-color: orange;}
-}
-
-#boot2{-webkit-animation-name:rotatecolors2 10s infinite;
-    animation: rotatecolors2 10s infinite;}
-
-    @-webkit-keyframes rotatecolors2{
-    0%{background-color: black;}
-    25% {background-color: white;}
-    50% {background-color: brown;}
-    75% {background-color: orange;}
-    100% {background-color: green;}
-   }
-
- @keyframes rotatecolors2{
-    0%{background-color: black;}
-    25% {background-color: white;}
-    50% {background-color: brown;}
-    75% {background-color: orange;}
-    100% {background-color: green;}
-   }
-
-#boot3{-webkit-animation-name:rotatecolors3 10s infinite;
-    animation: rotatecolors3 10s infinite;}
-    
-    @-webkit-keyframes rotatecolors3{
-    0%{background-color: brown;}
-    25% {background-color: orange;}
-    50% {background-color: green;}
-    75% {background-color: black;}
-    100% {background-color: white;}
-   }
-
-@-webkit-keyframes rotatecolors3{
-    0%{background-color: brown;}
-    25% {background-color: orange;}
-    50% {background-color: green;}
-    75% {background-color: black;}
-    100% {background-color: white;}
-   }
-
-/*Flip iphone image on hover*/
-#iphone:hover{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
-.carousel{
-  .img{height: 100%;}
- /*#NightTimeOpac{background-image:url("code.png");}*/
-}
-
-.tricks{color: #008000;
-text-transform: uppercase;
-text-align: center;
-font-size: 1.8em;}
-
-
-.button {
-    /*Change buttons to block elements */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-  padding: 15px 25px;
-  font-size: 1.5em;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: white;
-  background-color: #000066;
-}
-
-.button:hover {background-color: #7F7FB2}
-
-.button:active {
-  box-shadow: 0 3px #666;
-  transform: translateY(3px);
-  background-color: #3e8e41;
-}
-
-
-#boot2{-webkit-animation-name:rotatecolors2 10s infinite;
-    animation: rotatecolors2 10s infinite;}
-
-    @-webkit-keyframes rotatecolors2{
-    0%{background-color: black;}
-    25% {background-color: white;}
-    50% {background-color: brown;}
-    75% {background-color: orange;}
-    100% {background-color: green;}
-   }
-
-#intro{color: white;
-
-background-color: black;}
-
-.trickssection{color:black;}
-
-.topsection{padding-top: 50px;
-padding-bottom: 50px;}
-
-.Learned{color: black;}
-#htmlsyntax{text-align: center;
-color:#D3D3D3;}
-
-.logo
-{margin: auto;
-padding-bottom: 25px;}
-
-.botsection{
-	text-align: center;
-	padding-bottom: 25px;
-}
-
-.fa{color: red;
-}
-.Pitch{margin-top: 1.5em;}
-
-</style>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" id="hi" ref="#AboutMe">Sherwin Elcock</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#AboutMe">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#Resume">Resume</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>     
-    </div>
-  </div>
-</nav>
-
-<div id ="intro AboutMe" class="container-fluid" id="AboutMe" style="margin-top:15px; min-height: 100vh;">
-
-    <div class="col-sm-12 jumbotron Pitch" style="background-color: black;"><h1> Hey, I'm Sherwin</h1></div>
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10"> 
-    <p class="flydown">A help desk consultant. Aspiring web developer/programmer.</p>
-<p>When I am not at said help desk, I'm hacking away at one of my side projects. </p>
-<p>I have an Associates Degree in Computer Information Systems.</p>
-<p>It was focused on programming, mainly C++ and Java.</p>
-<p>I've been doing Front-End Development for 2 years now.</p>
-</div>
-    <div class="col-sm-1">
-</div>
-<div class="row slideanim">
-<!-- <div class="col-sm-12">
-
-<i style="font-size: 50px" class="fa">&#xf103;</i>
-</div> -->
-</div>
-
-</div>
-
-
-<div class="container-fluid" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh";>
-  <div class="row slideanim">
-    <p id="htmlsyntax"> &#60;h1&#62;</p>
-     <h1 id="nightHeading">I use</h1>
-     <p id="htmlsyntax"> &#60;/h1&#62;</p>
-   </div>
-
-      <div class="row slideanim topsection" style="padding-top: 3em;">
-  <div class="col-sm-4">
-     <img class="img-responsive logo" src="html5logo.png" alt="HTML logo" style="height:150px;">
-  </div>
-
-  <div class="col-sm-4">
-    <img class="img-responsive logo" src="css.png" alt="CSS logo" style="height:150px;">
-  </div>
-
-  <div class="col-sm-4">
-    <img class="img-responsive logo" src="JavaScriptlogo.png" alt="JavaScript logo" style="height:150px;">
-</div>
-
-</div>
-
-<div class="row slideanim topsection">
-<div class="col-sm-2"></div>
- <div class="col-sm-4">
-    <!-- <h2 id="folioHeading"> Jquery</h2> -->
-    <img class="img-responsive logo" src="jquerylog.png" alt="jQuery logo" style="height:150px;">
-  </div>
-  <div class="col-sm-4">
-    <img class="img-responsive logo" src="Boostraplogo.png" alt="BootStrap logo" style="height:150px;">
-  </div>
-<div class="col-sm-2"></div>
-  </div>
-
-<div class="row slideanim botsection">
-	<div class="col-sm-12">
-	<h2>Other Tools I Use</h2>
-</div>
-<div class="row botsection">
-	<div class="col-sm-6">
-	<p>GitHub<p>
-	<p>Gimp </p>
-	</div>
-	<div class="col-sm-6">
-	<p>SASS</p>
-	<p>WordPress</p> 
-	</div>
-</div>
-</div>
-
-</div>
-
-<div class="container-fluid" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh; background-color:#000040;"">
-	<div class="row slideanim">
-		<h1 class="folioHeading">Work I've Done</h1>
-	</div>	
-	<div class="row slideanim">
-		<div class="col-sm-6">
-			<h2 class="foliotextheading">This Site</h2>
-			<p class="foliotext">Built from SCRATCH to be responsive</p>
-			<p class="foliotext">Using HTML, CSS, JavaScript, JQuerry and Bootstrap</p>
-			<p class="foliotext">Followed a design process:</p>
-			<p class="foliotext">Sitemap</p>
-			<p class="foliotext">Sketch/Mockup</p>
-			<p class="foliotext">Wireframe</p>
-			<p class="foliotext">Development</p>
-			<p class="foliotext">Check it out here.</p>
-
-	</div>
-	<div class="col-sm-6">
-		<h2 class="foliotextheading">Versions</h2>
-		<a href="version1.html" target="_blank"><p class="foliotextver">Version 1</p></a>
-		<a href="version2.html" target="_blank"><p class="foliotextver">Version 2</p></a>
-		<p class="foliotextver">To what you're viewing now.</p>
-	</div>
-</div>
-</div>
-
-
-<div class="container-fluid row slideanim" style="padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; min-height: 100vh;">
-  
-
-
-<div class="row slideanim">
-
-<div class="col-sm-12">
-
-	<h1 class="Learned" style="text-align: center; padding-top: 25px;">What I'm Working On</h1>
-	<a href="http://www.sherwinelcock.com/blog" target="_blank"><h3 class="Learned" style="text-align: center;">WordPress Blog </h3>
-	
-</div>
-
-<!-- <div class="col-sm-2">
-	<! Spinner -->
-  <!-- <p><i class="fa fa-spinner w3-spin" style="font-size:50px;" ></i></p> -->
-  <!-- </div> -->
-</div> 
-
-<div class="row slideanim" style="padding-top: 25px;">
-	<div class="col-sm-5">
-<a href = "parallax_scroll.html" target="_blank"><p class="lead tricks"> JavaScript Parallax Scroll</p></a>
-<p class="lead trickssection">Blue circles are the background.</p>
-<p class="lead trickssection">Then I have 5 different triangles, each on a different layer and scrolling at a different speed.</p>
-<p>
-</div>
-
-<div class="col-sm-2">
-	
-	</div>
-<div class="col-sm-5">
-	<a href = "fade_out.html" target="_blank"><p class ="lead tricks">JavaScript to Fade Out/In Elements</p></a>
-		<p class="lead trickssection">Target the opacity of the element.</p>
-		<p class="lead trickssection">In from 0 - 10.</p>
-		<p class="lead trickssection">Out from 10 - 0.</p>
-	</div>
-	
-	</div>
-
-      <div class="row slideanim" style="padding-top: 25px;">
-          <div class="col-sm-12 text-center">
-            
-            <p class="lead trickssection" id="app" style="font-family: brushfont; font-size:1.5em;"> 
-            I also speak a few non-human languages. Feel free check out what I'm working on.</p>
-            <p class="lead">Unfamiliar with GitHub? Click "View Code" when page loads.</p>
-          </div>
-<div class="row">
-	<div class="col-sm-4">
-	</div>
-          <div class="col-sm-4">
-          	<img class="img-responsive" src="GitHub_Logo.png" class="img-responsive">
-            </div> 
-          <div class="col-sm-4"> 
-          </div>
-      </div>
-      <div class="row">
-
-        <div class="col-sm-6">
-          <a href="https://github.com/SherwinElcock/python" target="_blank"><button class="button">Python</button></a>
-        </div>
-        <div class="col-sm-6">
-          <a href="https://github.com/SherwinElcock/JavaScript"><button class="button">Javascript</button></a>
-        </div>
-        </div>
-         
-</div>
-</div>
-</div>
-</div>
-
-
-<!-- background:radial-gradient(circle, #74A6EE 0%, #485CB2 100%); -->
-     <div id="Resume" class="container-fluid" style="background-color: #C8ECF7; padding-top:50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px; background-color: #D3D3D3;       min-height: 100vh;">
-      <div class="row slideanim">
-    <h1 id="ResHead">Resume</h1>
-  </div>
-  <div class="row slideanim">
-    <div class="row">
-        <div class="col-sm-4">
-            <h3>
-            <span style="color:orangered;" class="employer">Vitalyst - 10/2016 - Present</span></h3>
-            <p id="jobTitle">Productivity Consultant</p>
-</div>
-<div class="col-sm-8">
-    <p id="Duties">What I Do</p>
-    <p class="lead">Responsible for initial support for PC, Network, printing and hardware/software functionality in accordance to Service Level Agreements.</p>
-    <p class="lead">Address customer contacts (telephone or email) promptly and efficiently within a specific timeframe to provide a defined level of service and availability to the customer.</p>
-    <p class="lead">Ensure proper recording, documentation and closure of tickets.</p>
-    <p class="lead">Properly escalate unresolved queries to the appropriate level of support.</p>
-    <p class="lead">Train users who are new to software.</p>
-    
-    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#dutiesExpand">More</button>
-  <div id="dutiesExpand" class="collapse">
-        <ul>
-          <li>Help with Microsoft Office Product Suite</li>
-          <ul>
-        <li>Outlook, Excel, Word, OneDrive, SharePoint</li>
-      </ul>    
-</ul>
-  </div>
-</div>
-</div>
-
-<div class="row">
-        <div class="col-sm-4">
-    <h3>
-    <span style="color:#83bd42" class="employer">Riddle Hospital - 10/2004-2/2016</span></h3>
-    <p id="jobTitle">Imaging Tech</p>
-</div>
-<div class="col-sm-8">
-    <p id="Duties">What I Did</p>
-    <p class="lead">Using appropriate software, Assist doctors and patients in acquiring and viewing medical images.</p>
-    <p class="lead">Maintain Radiology records according to HIPPA compliance standards.</p>
-    
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div id="Contact" class="container-fluid contContents" style="padding-top:50px; padding-bottom:80px; padding-left: 75px; padding-right: 75px; min-height: 100vh;">
-
-  <div class="row slideanim">
-    <div class="col-sm-12">
-<h1 id="contact" style="font-family: brushfont; font-size: 5em;">That's it...</h1>
-   </div>
-<div class="row slideanim">
-  <div class="col-sm-4 text-center">
-<h1>You can</h1>
-<p class="lead" style="font-family: brushfont";>Lurk around my</p>
-<a class="LI-simple-link" href='https://www.linkedin.com/in/sherwin-elcock-96ab8760?trk=profile-badge'><img class="img-responsive" src="linkedlogo.png" alt="Link to Public Linked in Profile"></a>
-</div>
-  <div class="col-sm-4 text-center">
-   <!-- <h1>Or</h1> !-->
-<a href="mailto:selcock5@yahoo.com?subject=I was at your site"><img class="img-responsive" src="emailme.jpg" alt="Email Me Picture" style="padding-top: 50px;"></a>
-<p id=emailText style="font-family: brushfont";>(Click the picture, FYI it'll open your email.)
-  </div>
-  <div class="col-sm-4 text-center">
-    <h1>Or...</h1>
-    <p class="lead" style="font-family: brushfont;">You can leave.</p>
-    <button type="button" class="btn btn-primary disabled" style="align-content: center;">Close Page</button>
-    <p class="text-muted" style="padding-top: 10px;">Yeah, that button's disabled!</p>
-    <p class="text-muted">Time for plan B.</p>
-  </div>
-
-  <div class="row exit"; style="text-align: center;">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-12">
-
-<p class="lead">Whatever you choose to do, thanks for coming by.</p>
-<p class="lead">Make sure to swing back, it's only going to get better.</p>
-
-</div>
-
- <div class="col-sm-2">
-    </div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="row">
-<footer class="container-fluid text-center">
-  <a href="#AboutMe" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>BACK TO TOP</p>
-</footer>
-</div>
-
-
-<script>
-var i = 0;
-var txt = 'A help desk consultant. \n\
-Aspiring web developer/programmer.\n\
-When I am not at said help desk, I\'m messing around with Web Design. \n\
-HTML, CSS, JavaScript, jQuery and Bootstrap.\n\
-I have an Associates Degree in \n\
-Computer Information Systems.\n\
-It was focused on programming, mainly C++ and Java.';
-    
-var speed = 25; /* The speed/duration of the effect in milliseconds */
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("AboutMe2").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
-
-<!-- SMOOTH SCROLL CONTROLS -->
-
-<script>
-  $(window).scroll(function() {
-  $(".slideanim").each(function(){
-    var pos = $(this).offset().top;
-
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
-      $(this).addClass("slide");
-    }
-  });
-});
-</script>
-
-<!-- END SMOOTH SCROLL -->
-
-
-<!-- FOR THE SMOOTH SCROLL -->
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="cardflip.css">
+<link rel="stylesheet" type="text/css" href="resume_section.css">
+<link rel="stylesheet" type="text/css" href="imageoverlay.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <title>Sherwin Elcock</title>
+<!-- width=device-width sets the width of the page to the width of the device -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== ""){
+    if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
 
@@ -839,21 +26,815 @@ $(document).ready(function(){
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 900, function(){
+      }, 800, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
-})
+});
 </script>
+<style>
 
-<!-- END SMOOTH SCROLL -->
+html, body {
+margin:0;
+padding:0;
+}
+/*=========================================================================
+     Takes away the default spacing added by browsers
+======================================================================== */
+.main{margin-bottom: 5em;}
+/*To make sure that the padding and border are included in total height and width of elements*/
+* {
+    box-sizing: border-box;
+}
+
+/*=========================================================================
+        To make images scale based on screen
+======================================================================== */
+/*Center images*/
+.responsive {
+  display:block;
+  margin:auto;
+  max-width: 100%;
+  height: auto;
+  }
+
+/*=========================================================================
+  Header Text
+======================================================================== */
+
+#header {
+    /*border: 1px solid red;*/
+    padding: 15px;
+    text-align: center;
+}
+
+#itsme{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+#aboutme{
+  height:100vh;
+  background-color: black;
+  font-family: Ubuntu, sans-serif;}
+
+.metext{color: white;
+  font-size: .8em;
+}
+/*=========================================================================
+  End Header 
+======================================================================== */
+
+/*=========================================================================
+  What I"m Working On / Work I've Done
+======================================================================== */
+#portfolio{
+  text-align:center;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+}
+
+#bloglink{
+  text-align: center;
+}
+
+
+/*Work I've done heading*/
+#portfolio2{
+  text-align:center;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.0em;
+}
+
+/*Other tools I use heading*/
+#xtraportfolio{
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+/*Headings on what i'm workng on cards - Portfolio Section*/
+.tricks{
+  text-align: center;
+  font-size: 1.5em;
+}
+/*=========================================================================
+   END What I"m Working On / Work I've Done
+======================================================================== */
+/*Take away underline on links*/
+a {
+  text-decoration: none;
+}
+/*To prevent elements from ignoring items in columns*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row{margin-bottom: 3em;
+width:100%;}
+
+
+/*Float each column to the left and give it padding*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/*@media screen and (max-width: 600px) {
+ 
+}*/
+
+    /*=========================================================================
+Uncomment to see the border around each column
+======================================================================== */
+    /*border: 1px solid red;*/
+
+/*Using 12 columns this is the math breakdown 100/12*/
+/*Class for each column*/
+
+
+/*=========================================================================
+        For mobile phones: Everything up to 600px iphone/Portrait
+======================================================================== */
+@media only screen and (max-width: 600px){
+
+.tools{color: purple;}
+.col-xs-1 {width: 8.33%;}
+.col-xs-2 {width: 16.66%;}
+.col-xs-3 {width: 25%;}
+.col-xs-4 {width: 33.33%;}
+.col-xs-5 {width: 41.66%;}
+.col-xs-6 {width: 50%;}
+.col-xs-7 {width: 58.33%;}
+.col-xs-8 {width: 66.66%;}
+.col-xs-9 {width: 75%;}
+.col-xs-10 {width: 83.33%;}
+.col-xs-11 {width: 91.66%;}
+.col-xs-12 {width: 100%;}
+ 
+/* Uncomment to dispaly footer 
+ div.footer {
+    display: none;
+  }*/
+.footer{margin-bottom: 2.5em;}
+
+ /*Stick the nav bar to the bottom of phone screen */
+.nav{
+  overflow: hidden;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  background-color: #869397;
+}
+/*Navbar link text styles*/
+.nav a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  float: left;
+  display: block;
+  padding: 15px 10px;
+  font-size: 1em;
+}
+p{
+  font-size: 1em;}
+}
+#jects{
+  width: 90%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px  7px#FF7F50;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+#jects2{
+  width: 90%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px 7px #ADD8E6;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+#jects3{
+  width: 90%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px 7px green;
+  margin-left: 1em;
+}
+#jects4{
+  width: 90%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px 7px blue;
+  margin-left: 1em;
+}
+
+/*=========================================================================
+       Extra small devices (phones, 600px and up) iPhone landscape
+======================================================================== */
+@media only screen and (min-width: 600px) {
+/*Move header down only on screens when the header is on the top*/
+#header{margin-top: 3em;}
+
+.nav{
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: #0099cc;
+}
+
+/*Navbar link text styles*/
+.nav a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  float: left;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1.2em;
+}
+
+.tools{
+  color: yellow;
+}
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/*Portfolio Section Cards*/
+#jects{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px #FF7F50;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+
+#jects2{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px 7px #ADD8E6;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+
+#jects3{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px 7px orange;
+  margin-left: 1em;
+}
+
+#jects3{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px red;
+  margin-left: 1em;
+}
+
+/*=========================================================================
+        Medium devices (landscape tablets, 768px and up) ipad portrait
+======================================================================== */
+@media only screen and (min-width: 768px){
+/*Move header down only on screens when the header is on the top*/
+#header{margin-top: 3em;}
+
+.metext{padding-left: 2em;}
+
+  /*Stick the nav bar to the top of phone screen */
+.nav{
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: #041E42;
+}
+/*Navbar link text styles*/
+.nav a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  float: left;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1.2em;
+}
+.tools{color: blue;}
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
+#jects{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px #FF7F50;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+#jects2{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px 7px #ADD8E6;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+#jects3{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px 7px orange;
+  margin-left: 1em;
+}
+#jects4{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px -10px 7px brown;
+  margin-left: 1em;
+}
+/*=========================================================================
+        Large devices (laptops/desktops, 992px and up) iPad landscape
+======================================================================== */
+@media only screen and (min-width: 992px){ 
+
+  /*Move header down only on screens when the header is on the top*/
+#header{margin-top: 3em;}
+
+.metext{padding-left: 2em;}
+
+.nav{
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: 003594;
+}
+/*Navbar link text styles*/
+.nav a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  float: left;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1.2em;
+}
+.tools{color:orange;}
+.col-l-1 {width: 8.33%;}
+.col-l-2 {width: 16.66%;}
+.col-l-3 {width: 25%;}
+.col-l-4 {width: 33.33%;}
+.col-l-5 {width: 41.66%;}
+.col-l-6 {width: 50%;}
+.col-l-7 {width: 58.33%;}
+.col-l-8 {width: 66.66%;}
+.col-l-9 {width: 75%;}
+.col-l-10 {width: 83.33%;}
+.col-l-11 {width: 91.66%;}
+.col-l-12 {width: 100%;}
+#jects{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px red;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects2{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px yellow;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects3{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px yellow;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects4{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px yellow;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+}
+/*=========================================================================
+        Extra large devices (large laptops and desktops, 1200px and up) Mac
+======================================================================== */
+@media only screen and (min-width: 1200px) 
+{
+.nav{
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: #003594;
+}
+/*Navbar link text styles*/
+.nav a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  float: left;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1.2em;
+}
+/*Move header down only on screens when the header is on the top*/
+#header{margin-top: 3em;}
+
+
+.metext{padding-left: 2em;}
+
+
+/*Riddle heading - on big screen add a top border*/
+#riddle{
+  border-top: 1px black;
+}
+
+.footer{
+  margin-bottom: 1em;
+}
+
+/*Start of column math */
+.col-xl-1 {width: 8.33%;}
+.col-xl-2 {width: 16.66%;}
+.col-xl-3 {width: 25%;}
+.col-xl-4 {width: 33.33%;}
+.col-xl-5 {width: 41.66%;}
+.col-xl-6 {width: 50%;}
+.col-xl-7 {width: 58.33%;}
+.col-xl-8 {width: 66.66%;}
+.col-xl-9 {width: 75%;}
+.col-xl-10 {width: 83.33%;}
+.col-xl-11 {width: 91.66%;}
+.col-xl-12 {width: 100%;}
+#jects{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px red;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects2{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px blue;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects3{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px yellow;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+#jects4{
+  width: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -10px 10px 7px green;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+}
+/*=========================================================================
+      E N D  Extra large devices (large laptops and desktops, 1200px and up) Mac
+======================================================================== */
+
+/*What to do if it goes landscape*/
+/*@media only screen and (orientation: landscape)
+       /*{.menu{background-color: orange;}*/
+    
+/*@media screen and (max-width: 900px) {
+    ul.nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.nav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}*/
+.tools{text-align: center;}
+
+.pitch{
+  font-size: 1.5em;
+  color: blue;}
+
+.logotext{text-align: center;}
+/*=========================================================================
+  Footer Style
+======================================================================== */
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: black;
+   text-align: center;
+}
+
+#centerfooter{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#thanks{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.0em;
+  text-transform: uppercase;
+}
+/*=========================================================================
+  END Footer Style
+======================================================================== */
+
+#resheading{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+}
+
+/*=========================================================================
+I Use Section
+======================================================================== */
+/*The heading*/
+#mytools{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+}
+
+
+/*=========================================================================
+  Other Tools I Use
+======================================================================== */
+#section2{
+  background-color: #D3D3D3;
+  height: 100vh;  
+  background: radial-gradient(#B0B0B0, #C0C0C0, #FFFFFF); /* Standard syntax (must be last) */
+}
+
+/*Other tools section font*/
+.xtools{
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+/*=========================================================================
+  END Other Tools I Use
+======================================================================== */
+
+/*=========================================================================
+ Contact Section / Last Section
+======================================================================== */
+.contact_contents{
+  margin-bottom: 5em;
+}
+
+.emailme{
+  text-align: center;
+}
+/*=========================================================================
+ END Contact Section / Last Section
+======================================================================== */
+</style>
+</head>
+<body>
+  <div  class="nav">
+    <a href="#aboutme">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div id="aboutme">
+<div id="header">
+<h1 id="itsme"> Hey I'm Sherwin</h1>
+</div>
+<div class="main">
+<div class="row">
+<div class="col-xs-12 col-s-12 col-m-12 col-l-8 pitch">
+<p class="metext">Philadelphia based Help Desk Consultant / Front End Developer </p>
+<p class="metext">When I am not at said help desk, I'm hacking away at one of my side projects. </p>
+<p class="metext">I have an Associates Degree in Computer Information Systems.</p>
+<p class="metext">It was focused on programming, mainly C++ and Java.</p>
+<p class="metext">I've been doing Front End Development for 2 years now.</p>
+</div>
+</div>
+</div>
+</div>
+
+<h1 class="tools" id="mytools">I USE</h1>
   
+<div class="row">
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
+  <img src="html5logo.png" alt="HTML logo" style="height:150px; width: 125px;" class="responsive">
+  <p class="logotext">How can you build a website without this?</p>
+</div>
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
+  <img src="css.png" alt="CSS logo" style="height:150px; width: 125px;" class="responsive">
+  <p class="logotext">To style the page</p>
+  <p class="logotext">Built responsive grid from scratch.</p>
+  <p class="logotext">Resize the browser/or flip your device orientation.</p>
+  <p class="logotext">Used media querries to get screen size and adjust content, taking landscape into consideration.</p>
+  <p class="logotext">Some elements are hidden, others moved, fonts and colors change.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
+  <img src="JavaScriptlogo.png" alt="JavaScript logo" style="height:150px; width: 125px;" class="responsive">
+  <p class="logotext">Used for the type writer effect</p>
+  
+</div>
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
+  <img src="jquerylog.png" alt="jQuery logo" style="height:150px; width: 125px;" class="responsive">
+</div>
+</div>
+<!-- Other Tools I Use -->
+<div id="section2">
+<div class="row">
+<div class="col-xs-12 col-s-12 col-m-12 col-l-12">
+  <h1 id="xtraportfolio">Other Tools I Use</h1>
+</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-4">
+    <p class="xtools">GitHub</p>
+  </div>
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-4">
+    <p class="xtools">Woodpress</p>
+  </div>
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-4">
+    <p class="xtools">Bootstrap</p>
+  </div>
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6">
+    <p class="xtools">Chromes Developer Tools</p>
+  </div>
+  <div class="col-xs-12 col-s-12 col-m-12 col-l-12 col-xl-6">
+    <p class="xtools">HTML Validators</p>
+  </div>
+  </div>
+</div>
+
+<!-- Portfolio Section -->
+<div class="row">
+<div class="col-xs-12 col-s-12 col-m-12 col-l-12">
+  <h1 class id="portfolio">What I'm Working On</h1>
+  
+    <a href="http://www.sherwinelcock.com/blog" target="_blank" id="bloglink"><h3>Follow Here: WordPress Blog </h3></a>
+</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects">
+  <a href = "fade_out.html" target="_blank"><p class ="tricks">CSS Responsive Grid</p></a>
+    <p class="lead trickssection">Build one from scrath for this site.</p>
+    <p class="lead trickssection">As with anything, it's a work in progress.</p>
+    <p class="lead trickssection">Still looking for ways to make it better.</p>
+</div>
+<div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects2">
+  <a href = "parallax_scroll.html" target="_blank"><p class ="tricks">JavaScript Parallax Scroll</p></a>
+    <p class="lead trickssection">Blue circles are the fixed position background.</p>
+    <p class="lead trickssection">Triangles are each on a differnet layer and scrolling at a different speed.</p>
+    <p class="lead trickssection">Out from 10 - 0.</p>
+  </div>
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects3">
+  <a href = "fade_out.html" target="_blank"><p class ="tricks">JavaScript to Fade Out/In Elements</p></a>
+    <p class="lead trickssection">Target the opacity of the element.</p>
+    <p class="lead trickssection">In from 0 - 10.</p>
+    <p class="lead trickssection">Out from 10 - 0.</p>
+    
+  </div>
+    <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects4">
+ <a href = "parallax_scroll.html" target="_blank"><p class="tricks"> To be uploaded...</p></a>
+<p class="trickssection">Simple CSS animations.</p>
+<p class="trickssection">SVG drawings/image manipulation.</p>
+  </div>
+</div>
+
+<div class="row">
+<h1 class id="portfolio2">Work I've Done</h1>
+<div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6">
+<a href="version2.html" target="_blank"><p class="foliotextver">Version 1</p></a>
+</div>
+<div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6">
+  <p>Before building my own, I used bootstrap for the responsive layout.</p>
+</div>
+</div>
+
+<!--Styled in resume_section.css-->
+<div id="resume">
+  <h1 class="Resume" id="resheading">Resume</h1>
+<div class="row">
+  <div class="col-xs-12 col-s-4 col-m-4 col-l-4">
+  <h3><span style="color:orangered;" class="employer">Vitalyst - 10&#47;2016 - Present</span></h3>
+            <p id="jobTitle">Productivity Consultant</p>
+          </div>
+    <div class="col-xs-12 col-s-8 col-m-8 col-l-8">
+      <div class="test">
+    <p class="dutyheading">What I Do</p>
+    <p class="duties">Responsible for initial support for PC, Network, printing and hardware/software functionality in accordance to Service Level Agreements.</p>
+    <p class="duties">Address customer contacts (telephone or email) promptly and efficiently within a specific timeframe to provide a defined level of service and availability to the customer.</p>
+    <p class="duties">Ensure proper recording, documentation and closure of tickets.</p>
+    <p class="duties">Properly escalate unresolved queries to the appropriate level of support.</p>
+    <p class="duties">Train users who are new to software.</p>
+</div>
+</div>
+<div class="col-xs-12 col-s-4 col-m-4 col-l-4">
+<h3><span style="color:#83bd42" class="employer" id="riddle">Riddle Hospital - 10&#47;2004-2&#47;2016</span></h3>
+    <p class="jobTitle">Imaging Tech</p>
+</div>
+    <div class="col-xs-12 col-s-8 col-m-8 col-l-8">
+    <p class="dutyheading">What I Did</p>
+    <p class="duties">Using appropriate software, Assist doctors and patients in acquiring and viewing medical images.</p>
+    <p class="duties">Maintain Radiology records according to HIPPA compliance standards.</p>
+</div>
+</div>
+</div>
+
+<section>
+<div id="contact">
+<h2 id="thanks">Thanks for stopping by</h2>
+<div class="row contact_contents">
+  <div class="col-xs-12 col-s-6 col-m-6 col-l-6">
+<p class="emailme">Interested in getting touch?</p>
+<P class="emailme">My only social media account is LinkedIn.</p>
+  <a href='https://www.linkedin.com/in/sherwin-elcock-96ab8760?trk=profile-badge'><img src="linkedlogo.png" alt="Link to Public Linked in Profile" style="width: 50%;" class="responsive"></a>
+</div>
+  <div class=" col-xs-12 col-s-6 col-m-6 col-l-6">
+<p class="emailme" id="social_media">If social media isn't your thing.</p>
+<a href="mailto:selcock5@yahoo.com?subject=I%20was%20at%20your%20site"><p class="emailme">Send me an email.</p></a>
+  </div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+  <p id="centerfooter">&#169; Sherwin Elcock 2018</p>
+</footer>
 
 </body>
 </html>
