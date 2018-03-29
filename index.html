@@ -5,13 +5,19 @@
 <link rel="stylesheet" type="text/css" href="cardflip.css">
 <link rel="stylesheet" type="text/css" href="resume_section.css">
 <link rel="stylesheet" type="text/css" href="imageoverlay.css">
+<link rel="stylesheet" type="text/css" href="test.css">
+<!-- The animate.css file -->
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>Sherwin Elcock</title>
 <!-- width=device-width sets the width of the page to the width of the device -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -44,6 +50,24 @@ html, body {
 margin:0;
 padding:0;
 }
+
+.tools{
+  text-align: center;
+}
+
+.pitch{
+  font-size: 1.5em;
+  color: blue;}
+
+.logotext{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav{
+  z-index: 10;
+}
+
 /*=========================================================================
      Takes away the default spacing added by browsers
 ======================================================================== */
@@ -83,7 +107,8 @@ padding:0;
 #aboutme{
   height:100vh;
   background-color: black;
-  font-family: Ubuntu, sans-serif;}
+  font-family: 'Montserrat', sans-serif;
+}
 
 .metext{color: white;
   font-size: .8em;
@@ -103,9 +128,16 @@ padding:0;
 }
 
 #bloglink{
+  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
+.portfolio3{
+  text-align:center;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+}
 
 /*Work I've done heading*/
 #portfolio2{
@@ -113,6 +145,13 @@ padding:0;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-size: 2.0em;
+}
+
+#fresh{
+  font-size: .8em;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 /*Other tools I use heading*/
@@ -127,6 +166,21 @@ padding:0;
 .tricks{
   text-align: center;
   font-size: 1.5em;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+/*Text on the cards*/
+.trickssection{font-family: 'Montserrat', sans-serif;}
+
+.workdone{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.verframetext{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 /*=========================================================================
    END What I"m Working On / Work I've Done
@@ -135,6 +189,10 @@ padding:0;
 a {
   text-decoration: none;
 }
+
+/*=========================================================================
+IMPORTANT ROW INFORMATION
+======================================================================== */
 /*To prevent elements from ignoring items in columns*/
 .row::after {
     content: "";
@@ -152,11 +210,7 @@ width:100%;}
     padding: 15px;
 }
 
-/*@media screen and (max-width: 600px) {
- 
-}*/
-
-    /*=========================================================================
+/*=========================================================================
 Uncomment to see the border around each column
 ======================================================================== */
     /*border: 1px solid red;*/
@@ -170,7 +224,13 @@ Uncomment to see the border around each column
 ======================================================================== */
 @media only screen and (max-width: 600px){
 
-.tools{color: purple;}
+.tools{
+  color: #006BB6;
+}
+
+/*Without this the 3rd card drops out of order on iPhone 8 small screen*/
+.tricks{font-size: 1em;}
+
 .col-xs-1 {width: 8.33%;}
 .col-xs-2 {width: 16.66%;}
 .col-xs-3 {width: 25%;}
@@ -188,10 +248,11 @@ Uncomment to see the border around each column
  div.footer {
     display: none;
   }*/
-.footer{margin-bottom: 2.5em;}
+.footer{margin-bottom: 3em;}
 
  /*Stick the nav bar to the bottom of phone screen */
 .nav{
+  z-index: 10;
   overflow: hidden;
   position: fixed;
   bottom:0;
@@ -208,6 +269,7 @@ Uncomment to see the border around each column
   padding: 15px 10px;
   font-size: 1em;
 }
+
 p{
   font-size: 1em;}
 }
@@ -269,8 +331,10 @@ p{
 }
 
 .tools{
-  color: yellow;
+  color: #2980B9;
 }
+
+#section2{padding-bottom: 15em;}
 
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
@@ -392,6 +456,8 @@ p{
   box-shadow: 10px -10px 7px brown;
   margin-left: 1em;
 }
+
+
 /*=========================================================================
         Large devices (laptops/desktops, 992px and up) iPad landscape
 ======================================================================== */
@@ -407,7 +473,7 @@ p{
   position: fixed;
   top:0;
   width: 100%;
-  background-color: 003594;
+  background-color: #003594;
 }
 /*Navbar link text styles*/
 .nav a{
@@ -419,7 +485,10 @@ p{
   padding: 15px 15px;
   font-size: 1.2em;
 }
-.tools{color:orange;}
+.tools{
+  color:red;
+}
+
 .col-l-1 {width: 8.33%;}
 .col-l-2 {width: 16.66%;}
 .col-l-3 {width: 25%;}
@@ -577,13 +646,7 @@ p{
     }
     div.content {margin-left: 0;}
 }*/
-.tools{text-align: center;}
 
-.pitch{
-  font-size: 1.5em;
-  color: blue;}
-
-.logotext{text-align: center;}
 /*=========================================================================
   Footer Style
 ======================================================================== */
@@ -612,6 +675,7 @@ p{
 ======================================================================== */
 
 #resheading{
+  padding-top: 1em;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
@@ -634,14 +698,14 @@ I Use Section
 ======================================================================== */
 #section2{
   background-color: #D3D3D3;
-  height: 100vh;  
+  min-height: 100%;  
   background: radial-gradient(#B0B0B0, #C0C0C0, #FFFFFF); /* Standard syntax (must be last) */
 }
 
 /*Other tools section font*/
 .xtools{
-  font-family: Ubuntu, sans-serif;
-  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
   text-align: center;
 }
 /*=========================================================================
@@ -656,11 +720,53 @@ I Use Section
 }
 
 .emailme{
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 /*=========================================================================
  END Contact Section / Last Section
 ======================================================================== */
+
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+
+/*=========================================================================
+Custom Edits Made to Animate.CSS
+======================================================================== */
+/*Hide elements before they are in the viewport*/
+.hidden{
+	opacity:0;
+}
+
+/*Display elements once they are in the viewport*/
+.visible{
+	opacity: 1;
+}
+
+.fadeInDown {
+  -webkit-animation-duration:  3s; /* Safari 4+ */
+  -moz-animation-duration:     3s; /* Fx 5+ */
+  -o-animation-duration:       3s; /* Opera 12+ */
+  animation-duration:          3s; /* IE 10+, Fx 29+ */
+}
+
+.zoomInLeft{
+  -webkit-animation-duration:  3s; /* Safari 4+ */
+  -moz-animation-duration:     3s; /* Fx 5+ */
+  -o-animation-duration:       3s; /* Opera 12+ */
+  animation-duration:          3s; /* IE 10+, Fx 29+ */
+}
+
 </style>
 </head>
 <body>
@@ -673,47 +779,55 @@ I Use Section
 
 <div id="aboutme">
 <div id="header">
-<h1 id="itsme"> Hey I'm Sherwin</h1>
+<h1 id="itsme" class="animated fadeInDown"> Hey I'm Sherwin</h1>
 </div>
 <div class="main">
 <div class="row">
-<div class="col-xs-12 col-s-12 col-m-12 col-l-8 pitch">
+<div class="col-xs-12 col-s-12 col-m-12 col-l-8 pitch animated bounceInLeft">
 <p class="metext">Philadelphia based Help Desk Consultant / Front End Developer </p>
 <p class="metext">When I am not at said help desk, I'm hacking away at one of my side projects. </p>
 <p class="metext">I have an Associates Degree in Computer Information Systems.</p>
 <p class="metext">It was focused on programming, mainly C++ and Java.</p>
+<p class="metext">Nowadays, I'm in the business of coding responsive sites.</p>
 <p class="metext">I've been doing Front End Development for 2 years now.</p>
 </div>
 </div>
+
 </div>
 </div>
 
-<h1 class="tools" id="mytools">I USE</h1>
-  
-<div class="row">
-<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
-  <img src="html5logo.png" alt="HTML logo" style="height:150px; width: 125px;" class="responsive">
-  <p class="logotext">How can you build a website without this?</p>
+<div class="stuff">
+  <h1 class="tools" id="mytools">I USE</h1>
+    <div class="row">
+      <div class="col-xs-12 col-s-6 col-m-6 col-l-6 basicsleft" style="height: 27em;">
+        <img src="html5logo.png" alt="HTML logo" style="height:150px; width: 125px;" class="responsive zoom">
+          <p class="logotext">How can you build a website without this?</p>
+            <p class="logotext">The browser has to know what everything is.</p>
+              <p class="logotext">I have a firm understading of HTML 5.</p>
 </div>
-<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
-  <img src="css.png" alt="CSS logo" style="height:150px; width: 125px;" class="responsive">
-  <p class="logotext">To style the page</p>
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6 basicsright" style="height: 27em;">
+  <img src="css.png" alt="CSS logo" style="height:150px; width: 125px;" class="responsive zoom">
+  <p class="logotext">To style the page.</p>
   <p class="logotext">Built responsive grid from scratch.</p>
-  <p class="logotext">Resize the browser/or flip your device orientation.</p>
-  <p class="logotext">Used media querries to get screen size and adjust content, taking landscape into consideration.</p>
+  <p class="logotext">Resize the browser or flip your device orientation.</p>
+  <p class="logotext">Used media querries to get screen size and adjust content.</p>
   <p class="logotext">Some elements are hidden, others moved, fonts and colors change.</p>
 </div>
 </div>
 <div class="row">
-<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
-  <img src="JavaScriptlogo.png" alt="JavaScript logo" style="height:150px; width: 125px;" class="responsive">
-  <p class="logotext">Used for the type writer effect</p>
-  
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6 basicsleft" style="height: 27em;">
+  <img src="JavaScriptlogo.png" alt="JavaScript logo" style="height:150px; width: 125px;" class="responsive zoom">
+  <p class="logotext">Wrote script for a typewriter effect.</p>
+  <p class="logotext"><small>Used on a previous version of this site.</small></p>  
 </div>
-<div class="col-xs-12 col-s-6 col-m-6 col-l-6">
-  <img src="jquerylog.png" alt="jQuery logo" style="height:150px; width: 125px;" class="responsive">
+<div class="col-xs-12 col-s-6 col-m-6 col-l-6 basicsright" style="height: 27em;">
+  <img src="jquerylog.png" alt="jQuery logo" style="height:150px; width: 125px;" class="responsive zoom">
+  <p class="logotext">Used for the smooth scrolling betwween the navigation links.</p>
 </div>
 </div>
+</div>
+
+<div class="stuff">
 <!-- Other Tools I Use -->
 <div id="section2">
 <div class="row">
@@ -722,50 +836,62 @@ I Use Section
 </div>
 </div>
 <div class="row">
-  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-4">
-    <p class="xtools">GitHub</p>
-  </div>
-  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-4">
-    <p class="xtools">Woodpress</p>
-  </div>
-  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-4">
+
+     <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-3">
     <p class="xtools">Bootstrap</p>
   </div>
+
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-3">
+    <p class="xtools">GitHub</p>
+  </div>
+
+  <div class="col-xs-6 col-s-6 col-m-12 col-l-12 col-xl-3">
+    <p class="xtools">Woodpress</p>
+  </div>
+
+   <div class="col-xs-6 col-s-6 col-m-12 col-l-6 col-xl-3">
+    <p class="xtools">MySQL</p>
+  </div>
+
   <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6">
-    <p class="xtools">Chromes Developer Tools</p>
+    <p class="xtools">AngularJS</p>
   </div>
-  <div class="col-xs-12 col-s-12 col-m-12 col-l-12 col-xl-6">
-    <p class="xtools">HTML Validators</p>
+
+  <div class="col-xs-6 col-s-6 col-m-6 col-l-12 col-xl-6">
+    <p class="xtools">PHP</p>
   </div>
+ 
   </div>
 </div>
-
+</div>
+<div class="stuff2">
 <!-- Portfolio Section -->
 <div class="row">
 <div class="col-xs-12 col-s-12 col-m-12 col-l-12">
-  <h1 class id="portfolio">What I'm Working On</h1>
+  <h1 id="portfolio">What I'm Working On</h1>
   
     <a href="http://www.sherwinelcock.com/blog" target="_blank" id="bloglink"><h3>Follow Here: WordPress Blog </h3></a>
+    <p class="portfolio3">Each cards heading will open to an example. There is a link to gitHub there.</p>
 </div>
 </div>
-<div class="row">
+<div class="row" id="folio">
   <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects">
-  <a href = "fade_out.html" target="_blank"><p class ="tricks">CSS Responsive Grid</p></a>
-    <p class="lead trickssection">Build one from scrath for this site.</p>
-    <p class="lead trickssection">As with anything, it's a work in progress.</p>
-    <p class="lead trickssection">Still looking for ways to make it better.</p>
+  <p class ="tricks ">CSS Responsive Grid</p>
+    <p class="trickssection">Build one from scratch for this site.</p>
+    <p class="trickssection">As with anything, it's a work in progress.</p>
+    <p class="trickssection">Still looking for ways to make it better.</p>
 </div>
 <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects2">
   <a href = "parallax_scroll.html" target="_blank"><p class ="tricks">JavaScript Parallax Scroll</p></a>
-    <p class="lead trickssection">Blue circles are the fixed position background.</p>
-    <p class="lead trickssection">Triangles are each on a differnet layer and scrolling at a different speed.</p>
-    <p class="lead trickssection">Out from 10 - 0.</p>
+    <p class="trickssection">Blue circles are the fixed position background.</p>
+    <p class="trickssection">Triangles are each on a differnet layer.</p>
+        <p class="trickssection">Each scrolls at a different speed.</p>
   </div>
   <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects3">
   <a href = "fade_out.html" target="_blank"><p class ="tricks">JavaScript to Fade Out/In Elements</p></a>
-    <p class="lead trickssection">Target the opacity of the element.</p>
-    <p class="lead trickssection">In from 0 - 10.</p>
-    <p class="lead trickssection">Out from 10 - 0.</p>
+    <p class="trickssection">Target the opacity of the element.</p>
+    <p class="trickssection">In from 0 - 10.</p>
+    <p class="trickssection">Out from 10 - 0.</p>
     
   </div>
     <div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6" id="jects4">
@@ -774,18 +900,29 @@ I Use Section
 <p class="trickssection">SVG drawings/image manipulation.</p>
   </div>
 </div>
-
+</div>
+<div class="stuff3">
 <div class="row">
 <h1 class id="portfolio2">Work I've Done</h1>
-<div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6">
-<a href="version2.html" target="_blank"><p class="foliotextver">Version 1</p></a>
+<h2 id="fresh">No dust, only the newest.</h2>
+<div class="col-xs-12 col-s-12 col-m-6 col-l-6 col-xl-6">
+  <p class="workdone">Version 1 of my personal website.</p>
+  <p class="workdone">Before building my own, I used bootstrap for the responsive layout.</p>
+  <p class="workdone">Used @keyframes and percentages for intervals on animations.</p>
+  <a href="version2.html" target="_blank"><p class="verframetext">Full Site</p></a>
+
 </div>
-<div class="col-xs-6 col-s-6 col-m-6 col-l-6 col-xl-6">
-  <p>Before building my own, I used bootstrap for the responsive layout.</p>
+<div class="col-xs-12 col-s-12 col-m-6 col-l-6 col-xl-6">
+<a href="notecardapp.html"><p class="verframetext">Notecard App</p></a>
+<p class="workdone">Demo made using JavaScript and AngularJS.</p>
+<p class="workdone">Full site being made using MySQL and PHP.</p>
+
+</div>
 </div>
 </div>
 
 <!--Styled in resume_section.css-->
+<div class="stuff">
 <div id="resume">
   <h1 class="Resume" id="resheading">Resume</h1>
 <div class="row">
@@ -803,28 +940,31 @@ I Use Section
     <p class="duties">Train users who are new to software.</p>
 </div>
 </div>
-<div class="col-xs-12 col-s-4 col-m-4 col-l-4">
+<div class="col-xs-12 col-s-4 col-m-4 col-l-4 col-xl-4">
 <h3><span style="color:#83bd42" class="employer" id="riddle">Riddle Hospital - 10&#47;2004-2&#47;2016</span></h3>
     <p class="jobTitle">Imaging Tech</p>
 </div>
-    <div class="col-xs-12 col-s-8 col-m-8 col-l-8">
+    <div class="col-xs-12 col-s-8 col-m-8 col-l-8 col-xl-8">
     <p class="dutyheading">What I Did</p>
     <p class="duties">Using appropriate software, Assist doctors and patients in acquiring and viewing medical images.</p>
     <p class="duties">Maintain Radiology records according to HIPPA compliance standards.</p>
 </div>
 </div>
 </div>
+</div>
 
+<div class="stuff">
 <section>
 <div id="contact">
 <h2 id="thanks">Thanks for stopping by</h2>
 <div class="row contact_contents">
-  <div class="col-xs-12 col-s-6 col-m-6 col-l-6">
+  <div class="col-xs-12 col-s-6 col-m-6 col-l-6 col-xl-6">
 <p class="emailme">Interested in getting touch?</p>
+<p class="emailme">I am always interested in taking on new challenges.</p>
 <P class="emailme">My only social media account is LinkedIn.</p>
-  <a href='https://www.linkedin.com/in/sherwin-elcock-96ab8760?trk=profile-badge'><img src="linkedlogo.png" alt="Link to Public Linked in Profile" style="width: 50%;" class="responsive"></a>
+  <a href='https://www.linkedin.com/in/sherwin-elcock-96ab8760?trk=profile-badge'><img src="linkedlogo.png" alt="Link to Public Linked in Profile" style="width: 50%;" class="responsive linklogo"></a>
 </div>
-  <div class=" col-xs-12 col-s-6 col-m-6 col-l-6">
+  <div class=" col-xs-12 col-s-6 col-m-6 col-l-6 media">
 <p class="emailme" id="social_media">If social media isn't your thing.</p>
 <a href="mailto:selcock5@yahoo.com?subject=I%20was%20at%20your%20site"><p class="emailme">Send me an email.</p></a>
   </div>
@@ -832,9 +972,99 @@ I Use Section
 </div>
 </section>
 
+</div>
 <footer class="footer">
   <p id="centerfooter">&#169; Sherwin Elcock 2018</p>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+<script>
+	jQuery(document).ready(function(){
+		jQuery('.stuff').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeIn',
+			offset:100
+		});
+	});
 
+jQuery(document).ready(function(){
+		jQuery('.Resume').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated zoomInLeft',
+			offset:100
+		});
+	});
+
+jQuery(document).ready(function(){
+		jQuery('.tools').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInDown',
+			offset:100
+		});
+	});
+
+jQuery(document).ready(function(){
+		jQuery('.basicsleft').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInLeft',
+			offset:100
+		});
+	});
+
+jQuery(document).ready(function(){
+		jQuery('.basicsright').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInRight',
+			offset:100
+		});
+	});
+
+jQuery(document).ready(function(){
+    jQuery('#xtraportfolio').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated rollIn',
+      offset:100
+    });
+  });
+
+jQuery(document).ready(function(){
+    jQuery('.xtools').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated rotateInUpLeft',
+      offset:100
+    });
+  });
+
+jQuery(document).ready(function(){
+    jQuery('#thanks').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated flip',
+      offset:100
+    });
+  });
+jQuery(document).ready(function(){
+    jQuery('.stuff2').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated lightSpeedIn',
+      offset:100
+    });
+  });
+jQuery(document).ready(function(){
+    jQuery('.stuff3').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated bounceIn',
+      offset:100
+    });
+  });
+
+jQuery(document).ready(function(){
+    jQuery('.emailme').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated fadeInLeft',
+      offset:100
+    });
+  });
+
+jQuery(document).ready(function(){
+    jQuery('.media').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated fadeInRight',
+      offset:100
+    });
+  });
+jQuery(document).ready(function(){
+    jQuery('.linklogo').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated fadeInRight',
+      offset:100
+    });
+  });
+</script>
 </body>
 </html>
